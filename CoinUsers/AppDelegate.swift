@@ -5,4 +5,8 @@
 //  Created by Hovak Davtyan on 10.05.21.
 //
 
-impo
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+	func 
