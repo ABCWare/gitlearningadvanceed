@@ -22,4 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
 	}
 
-	func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<
+	func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+		// Called when the user discards a scene session.
+		// If any se
