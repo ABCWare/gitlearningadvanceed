@@ -63,3 +63,50 @@ final class LocalUsersViewController: BaseViewController {
 		searchController.searchBar.enablesReturnKeyAutomatically = true
 		searchController.hidesNavigationBarDuringPresentation = false
 		navigationItem.searchController = searchController
+	}
+
+	// MARK: - Reactive
+
+	private func doBindings() {
+		// SearchBar
+		searchBar?.rx.text.orEmpty
+			.bind(to: viewModel.search)
+			.disposed(by: disposeBag)
+
+		// TableView
+		viewModel.users
+			.bind(to: tableView.rx.items) { [viewModel] tv, row, model in
+				let indexPath = IndexPath(row: row, section: 0)
+				let cell: UserTableViewCell = tv.dequeueReusableCell(for: indexPath)
+				cell.model = model
+				cell.delegate = viewModel
+				return cell
+			}
+			.disposed(by: disposeBag)
+
+		Observable.zip(
+			tableView.rx.modelSelected(UserTableViewCell.Model.self),
+			tableView.rx.itemSelected
+		)
+		.do(onNext: { [weak self] _, indexPath in
+			self?.searchBar?.endEditing(true)
+			self?.tableView?.deselectRow(at: indexPath, animated: true)
+		})
+		.map { UserDetailsViewModel.Context(user: $0.0.user, isSaved: true) }
+		.bind(to: viewModel.openUserDetails)
+		.disposed(by: disposeBag)
+
+		// Error
+		viewModel.error.bind(to: error).disposed(by: disposeBag)
+	}
+}
+
+// MARK: UIScrollViewDelegate
+
+extension LocalUsersViewController: UIScrollViewDelegate {
+	func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+		DispatchQueue.main.async { [weak self] in
+			self?.navigationItem.searchController?.isActive = false
+		}
+	}
+}
