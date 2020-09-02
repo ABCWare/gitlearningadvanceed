@@ -11,4 +11,4 @@
         <!--Remote Users View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="RemoteUs
+                <viewController id="Y6W-OH-hqX" customClass="RemoteUsersViewController" customModule="CoinUsers" customModuleProvider="target" sceneMemberID="viewControll
