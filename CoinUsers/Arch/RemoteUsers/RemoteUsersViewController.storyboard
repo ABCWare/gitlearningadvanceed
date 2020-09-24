@@ -31,4 +31,4 @@
                         </constraints>
                     </view>
                     <connections>
-   
+                        <outlet property="tableView" destination="woA-Hk-3by" id="MbT
