@@ -38,4 +38,7 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </scene>
-    </scen
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1
