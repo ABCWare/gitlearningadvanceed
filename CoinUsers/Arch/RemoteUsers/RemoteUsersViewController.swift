@@ -54,3 +54,67 @@ final class RemoteUsersViewController: BaseViewController {
 	private var searchBar: UISearchBar? {
 		navigationItem.searchController?.searchBar
 	}
+
+	private func configureSearchController() {
+		let searchController = UISearchController(searchResultsController: nil)
+		searchController.searchBar.barTintColor = .main1
+		searchController.searchBar.placeholder = "Search by name, email, phone, location"
+		searchController.automaticallyShowsCancelButton = false
+		searchController.obscuresBackgroundDuringPresentation = false
+		searchController.searchBar.enablesReturnKeyAutomatically = true
+		searchController.hidesNavigationBarDuringPresentation = false
+		navigationItem.searchController = searchController
+	}
+
+	// MARK: - Reactive
+
+	private func doBindings() {
+		// SearchBar
+		searchBar?.rx.text.orEmpty
+			.bind(to: viewModel.search)
+			.disposed(by: disposeBag)
+
+		// TableView
+		viewModel.users
+			.bind(to: tableView.rx.items) { [viewModel] tv, row, model in
+				let indexPath = IndexPath(row: row, section: 0)
+				let cell: UserTableViewCell = tv.dequeueReusableCell(for: indexPath)
+				cell.model = model
+				cell.delegate = viewModel
+				return cell
+			}
+			.disposed(by: disposeBag)
+
+		Observable.zip(
+			tableView.rx.modelSelected(UserTableViewCell.Model.self),
+			tableView.rx.itemSelected
+		)
+		.do(onNext: { [weak self] _, indexPath in
+			self?.searchBar?.endEditing(true)
+			self?.tableView?.deselectRow(at: indexPath, animated: true)
+		})
+		.map { UserDetailsViewModel.Context(user: $0.0.user, isSaved: $0.0.isSaved) }
+		.bind(to: viewModel.openUserDetails)
+		.disposed(by: disposeBag)
+
+		// LoadMore
+		tableView.rx.contentOffset
+			.flatMap { [weak self] _ -> Observable<Void> in
+				guard let self = self else { return .empty() }
+				return self.tableView.isNearBottomEdge() ? .just(()) : .empty()
+			}
+			.bind(to: viewModel.loadMore)
+			.disposed(by: disposeBag)
+
+		// Error
+		viewModel.error.bind(to: error).disposed(by: disposeBag)
+	}
+}
+
+extension RemoteUsersViewController: UIScrollViewDelegate {
+	func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+		DispatchQueue.main.async { [weak self] in
+			self?.navigationItem.searchController?.isActive = false
+		}
+	}
+}
