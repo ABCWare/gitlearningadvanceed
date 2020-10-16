@@ -10,4 +10,8 @@ import RxSwift
 
 // MARK: - RemoteUsersViewModel
 
-final class RemoteUsersVie
+final class RemoteUsersViewModel: BaseViewModel {
+	// MARK: - Inputs
+
+	let refresh = PublishRelay<Void>()
+	let loadMo
