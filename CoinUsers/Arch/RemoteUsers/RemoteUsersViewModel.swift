@@ -14,4 +14,6 @@ final class RemoteUsersViewModel: BaseViewModel {
 	// MARK: - Inputs
 
 	let refresh = PublishRelay<Void>()
-	let loadMo
+	let loadMore = PublishRelay<Void>()
+	let search = BehaviorRelay(value: "")
+	let openUserDetails = PublishRelay<U
