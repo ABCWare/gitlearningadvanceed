@@ -24,4 +24,9 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	// MARK: - Services
 
-	private let usersService: RemoteUsersServiceProt
+	private let usersService: RemoteUsersServiceProtocol
+	private let realmService: RealmServiceProtocol
+
+	// MARK: - Internals
+
+	private let
