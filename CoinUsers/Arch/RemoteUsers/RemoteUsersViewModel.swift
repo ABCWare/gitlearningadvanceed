@@ -16,4 +16,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 	let refresh = PublishRelay<Void>()
 	let loadMore = PublishRelay<Void>()
 	let search = BehaviorRelay(value: "")
-	let openUserDetails = PublishRelay<U
+	let openUserDetails = PublishRelay<UserDetailsViewModel.Context>()
+
+	// MARK: - Outputs
+
+	let users = PublishRelay<[UserTableViewCell.
