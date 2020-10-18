@@ -20,4 +20,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	// MARK: - Outputs
 
-	let users = PublishRelay<[UserTableViewCell.
+	let users = PublishRelay<[UserTableViewCell.Model]>()
+
+	// MARK: - Services
+
+	private let usersService: RemoteUsersServiceProt
