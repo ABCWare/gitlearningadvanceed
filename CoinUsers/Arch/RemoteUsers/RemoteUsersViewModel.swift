@@ -29,4 +29,5 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	// MARK: - Internals
 
-	private let
+	private let isLoading = BehaviorRelay(value: false)
+	private let allUsers = BehaviorRelay(value: [U
