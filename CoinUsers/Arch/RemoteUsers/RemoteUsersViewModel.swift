@@ -30,4 +30,6 @@ final class RemoteUsersViewModel: BaseViewModel {
 	// MARK: - Internals
 
 	private let isLoading = BehaviorRelay(value: false)
-	private let allUsers = BehaviorRelay(value: [U
+	private let allUsers = BehaviorRelay(value: [User]())
+	private let filteredUsers = PublishRelay<[User]>()
+	private let localUsers = PublishR
