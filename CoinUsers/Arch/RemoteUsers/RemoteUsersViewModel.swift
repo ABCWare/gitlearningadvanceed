@@ -34,4 +34,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 	private let filteredUsers = PublishRelay<[User]>()
 	private let localUsers = PublishRelay<[User]>()
 	private let save = PublishRelay<User>()
-	private let delete = PublishRela
+	private let delete = PublishRelay<User>()
+
+	// MARK: - Init
+
+	init(usersService: RemoteUsersServiceProtocol, realmServi
