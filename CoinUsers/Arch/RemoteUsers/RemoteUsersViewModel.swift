@@ -38,4 +38,6 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	// MARK: - Init
 
-	init(usersService: RemoteUsersServiceProtocol, realmServi
+	init(usersService: RemoteUsersServiceProtocol, realmService: RealmServiceProtocol) {
+		self.usersService = usersService
+		self.realmService = 
