@@ -40,4 +40,12 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	init(usersService: RemoteUsersServiceProtocol, realmService: RealmServiceProtocol) {
 		self.usersService = usersService
-		self.realmService = 
+		self.realmService = realmService
+		super.init()
+
+		doBindings()
+	}
+
+	// MARK: - Reactive
+
+	private func doB
