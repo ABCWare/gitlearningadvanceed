@@ -48,4 +48,13 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	// MARK: - Reactive
 
-	private func doB
+	private func doBindings() {
+		bindAPI()
+		bindRealm()
+		bindUsers()
+		bindStepper()
+	}
+
+	// MARK: API
+
+	privat
