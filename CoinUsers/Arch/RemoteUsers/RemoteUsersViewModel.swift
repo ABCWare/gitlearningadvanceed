@@ -62,4 +62,6 @@ final class RemoteUsersViewModel: BaseViewModel {
 		Observable.merge(refresh.asObservable(), loadMore.asObservable())
 			.withLatestFrom(isLoading).filter { !$0 }
 			.withLatestFrom(search).filter { $0.isEmpty }
-			.withLatestFrom(allUsers) { $1.isEmpty ? 0 : $1.count / resultsPe
+			.withLatestFrom(allUsers) { $1.isEmpty ? 0 : $1.count / resultsPerPage }
+			.do(onNext: { [isLoading] _ in isLoading.accept(true) })
+			.flatM
