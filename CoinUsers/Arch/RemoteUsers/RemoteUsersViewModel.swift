@@ -65,4 +65,5 @@ final class RemoteUsersViewModel: BaseViewModel {
 			.withLatestFrom(allUsers) { $1.isEmpty ? 0 : $1.count / resultsPerPage }
 			.do(onNext: { [isLoading] _ in isLoading.accept(true) })
 			.flatMapLatest { [usersService] page in
-				usersService.read(with: .init(result
+				usersService.read(with: .init(results: resultsPerPage, page: page + 1))
+					.catch { [weak self] in self?.handle($0) ?? .neve
