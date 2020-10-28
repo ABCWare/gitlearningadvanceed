@@ -57,4 +57,6 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	// MARK: API
 
-	privat
+	private func bindAPI() {
+		let resultsPerPage = 50
+		Observable.merge(refresh.asObservable()
