@@ -61,4 +61,5 @@ final class RemoteUsersViewModel: BaseViewModel {
 		let resultsPerPage = 50
 		Observable.merge(refresh.asObservable(), loadMore.asObservable())
 			.withLatestFrom(isLoading).filter { !$0 }
-			.withLatestF
+			.withLatestFrom(search).filter { $0.isEmpty }
+			.withLatestFrom(allUsers) { $1.isEmpty ? 0 : $1.count / resultsPe
