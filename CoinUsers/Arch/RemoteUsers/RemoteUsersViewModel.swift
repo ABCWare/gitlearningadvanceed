@@ -73,4 +73,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 			.bind(to: allUsers)
 			.disposed(by: disposeBag)
 
-		// Searc
+		// Search
+
+		search
+			.withLatestFrom(allUsers) { query, users in
+				users.filter { $0.searchFields.fir
