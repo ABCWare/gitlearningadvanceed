@@ -86,4 +86,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 	// MARK: Users
 
 	private func bindUsers() {
-		Ob
+		Observable.combineLatest(
+			allUsers,
+			filteredUsers,
+			localUsers,
+		
