@@ -80,4 +80,10 @@ final class RemoteUsersViewModel: BaseViewModel {
 				users.filter { $0.searchFields.first(where: { $0.contains(query) }) != nil }
 			}
 			.bind(to: filteredUsers)
-			.dis
+			.disposed(by: disposeBag)
+	}
+
+	// MARK: Users
+
+	private func bindUsers() {
+		Ob
