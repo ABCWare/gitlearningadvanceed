@@ -77,4 +77,7 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 		search
 			.withLatestFrom(allUsers) { query, users in
-				users.filter { $0.searchFields.fir
+				users.filter { $0.searchFields.first(where: { $0.contains(query) }) != nil }
+			}
+			.bind(to: filteredUsers)
+			.dis
