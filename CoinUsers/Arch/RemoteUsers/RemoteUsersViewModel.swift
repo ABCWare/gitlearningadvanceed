@@ -90,4 +90,6 @@ final class RemoteUsersViewModel: BaseViewModel {
 			allUsers,
 			filteredUsers,
 			localUsers,
-		
+			search
+		) { all, filtered, localUsers, search in
+			let remoteUsers = filtered.isEmpty ? all : filtered
