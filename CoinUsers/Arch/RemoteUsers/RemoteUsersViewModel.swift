@@ -69,4 +69,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 					.catch { [weak self] in self?.handle($0) ?? .never() }
 			}
 			.do(onNext: { [isLoading] _ in isLoading.accept(false) })
-			.withLatestFrom(
+			.withLatestFrom(allUsers) { $1 + $0 }
+			.bind(to: allUsers)
+			.disposed(by: disposeBag)
+
+		// Searc
