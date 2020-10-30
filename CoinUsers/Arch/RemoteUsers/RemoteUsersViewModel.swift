@@ -93,3 +93,7 @@ final class RemoteUsersViewModel: BaseViewModel {
 			search
 		) { all, filtered, localUsers, search in
 			let remoteUsers = filtered.isEmpty ? all : filtered
+			return remoteUsers.map { remoteUser in
+				.init(
+					user: remoteUser,
+					isSaved
