@@ -96,4 +96,9 @@ final class RemoteUsersViewModel: BaseViewModel {
 			return remoteUsers.map { remoteUser in
 				.init(
 					user: remoteUser,
-					isSaved
+					isSaved: localUsers.contains(where: { $0.id == remoteUser.id }),
+					search: search
+				)
+			}
+		}
+		.bin
