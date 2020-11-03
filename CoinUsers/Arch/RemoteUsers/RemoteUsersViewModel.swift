@@ -101,4 +101,10 @@ final class RemoteUsersViewModel: BaseViewModel {
 				)
 			}
 		}
-		.bin
+		.bind(to: users)
+		.disposed(by: disposeBag)
+	}
+
+	// MARK: Realm
+
+	private func bindRe
