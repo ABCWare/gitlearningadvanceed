@@ -107,4 +107,9 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	// MARK: Realm
 
-	private func bindRe
+	private func bindRealm() {
+		refresh
+			.flatMap { [realmService] in
+				realmService.read()
+			}
+			.bind(to: l
