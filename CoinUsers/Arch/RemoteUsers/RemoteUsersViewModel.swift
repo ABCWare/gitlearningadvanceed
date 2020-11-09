@@ -117,4 +117,7 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 		// Save
 		save
-			.flatMap { [realmServi
+			.flatMap { [realmService] user in
+				realmService.save(user: user)
+			}
+			.flatMap { [realmService] _ in
