@@ -112,4 +112,9 @@ final class RemoteUsersViewModel: BaseViewModel {
 			.flatMap { [realmService] in
 				realmService.read()
 			}
-			.bind(to: l
+			.bind(to: localUsers)
+			.disposed(by: disposeBag)
+
+		// Save
+		save
+			.flatMap { [realmServi
