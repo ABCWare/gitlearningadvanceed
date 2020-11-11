@@ -127,4 +127,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 			.disposed(by: disposeBag)
 
 		// Delete
-		del
+		delete
+			.flatMap { [realmService] user in
+				realmService.delete(user: user)
+			}
+			.fl
