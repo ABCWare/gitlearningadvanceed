@@ -131,4 +131,8 @@ final class RemoteUsersViewModel: BaseViewModel {
 			.flatMap { [realmService] user in
 				realmService.delete(user: user)
 			}
-			.fl
+			.flatMap { [realmService] _ in
+				realmService.read()
+			}
+			.bind(to: localUsers)
+			.
