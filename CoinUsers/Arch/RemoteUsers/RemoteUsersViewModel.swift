@@ -135,4 +135,9 @@ final class RemoteUsersViewModel: BaseViewModel {
 				realmService.read()
 			}
 			.bind(to: localUsers)
-			.
+			.disposed(by: disposeBag)
+	}
+
+	private func bindStepper() {
+		openUserDetails
+			.map(RemoteUsersStep.
