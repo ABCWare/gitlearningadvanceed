@@ -140,4 +140,10 @@ final class RemoteUsersViewModel: BaseViewModel {
 
 	private func bindStepper() {
 		openUserDetails
-			.map(RemoteUsersStep.
+			.map(RemoteUsersStep.details(context:))
+			.bind(to: steps)
+			.disposed(by: disposeBag)
+	}
+}
+
+// MA
