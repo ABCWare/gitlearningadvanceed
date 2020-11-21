@@ -149,4 +149,5 @@ final class RemoteUsersViewModel: BaseViewModel {
 // MARK: UserCellDelegate
 
 extension RemoteUsersViewModel: UserCellDelegate {
-	func didTapAct
+	func didTapActionButton(for model: UserTableViewCell.Model) {
+		model.isSaved ? delete.accept(model.u
