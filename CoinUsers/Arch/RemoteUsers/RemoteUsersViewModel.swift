@@ -146,4 +146,7 @@ final class RemoteUsersViewModel: BaseViewModel {
 	}
 }
 
-// MA
+// MARK: UserCellDelegate
+
+extension RemoteUsersViewModel: UserCellDelegate {
+	func didTapAct
