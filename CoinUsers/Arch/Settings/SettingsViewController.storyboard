@@ -24,4 +24,6 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroun
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+ 
