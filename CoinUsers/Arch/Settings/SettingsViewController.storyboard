@@ -23,4 +23,5 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewL
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroun
