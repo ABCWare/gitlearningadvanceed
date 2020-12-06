@@ -27,4 +27,4 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jw3-fI-6lF" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="glH-8w-4N9"/>
-                         
+                            <constraint firstItem="jw3-fI-6lF" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="nbW-xM
