@@ -1,0 +1,3 @@
+//
+//  SettingsViewController.swift
+//  CoinUs
