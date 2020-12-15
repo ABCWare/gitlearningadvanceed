@@ -105,3 +105,24 @@
                             <constraint firstItem="OUW-P7-eSv" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="zbB-ER-sji"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressRow" destination="cg8-GQ-Olf" id="OuJ-sD-vgB"/>
+                        <outlet property="ageRow" destination="W92-ZI-aPS" id="9Ma-fF-OfT"/>
+                        <outlet property="avatarImageView" destination="LdH-9b-FFg" id="iX4-7G-9Yj"/>
+                        <outlet property="emailRow" destination="iLb-6M-0uO" id="7or-2o-7wQ"/>
+                        <outlet property="genderRow" destination="VLq-Hv-tcz" id="v9w-Nw-Sza"/>
+                        <outlet property="mapView" destination="tCp-e4-OpT" id="hnn-BO-Ggb"/>
+                        <outlet property="phoneRow" destination="0p7-f4-lVZ" id="E99-Ro-nwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
