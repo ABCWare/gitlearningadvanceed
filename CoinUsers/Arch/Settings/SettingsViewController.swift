@@ -7,4 +7,7 @@
 
 import RxFlow
 
-final class Setti
+final class SettingsViewController: BaseViewController {
+	var viewModel: SettingsViewModel!
+
+	override var st
