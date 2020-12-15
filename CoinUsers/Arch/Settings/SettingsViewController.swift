@@ -10,4 +10,5 @@ import RxFlow
 final class SettingsViewController: BaseViewController {
 	var viewModel: SettingsViewModel!
 
-	override var st
+	override var stepper: Stepper! { viewModel }
+}
