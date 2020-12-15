@@ -17,4 +17,7 @@ import RxSwift
 // MARK: - UserDetailsViewController
 
 final class UserDetailsViewController: BaseViewController {
-	// MARK: - 
+	// MARK: - MVVM
+
+	var viewModel: UserDetailsViewModel!
+	override var stepper: Stepper! { viewMo
