@@ -14,4 +14,7 @@ import RxCocoa
 import RxFlow
 import RxSwift
 
-// MARK: - UserDetailsVi
+// MARK: - UserDetailsViewController
+
+final class UserDetailsViewController: BaseViewController {
+	// MARK: - 
