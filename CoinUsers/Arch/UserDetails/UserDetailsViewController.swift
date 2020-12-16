@@ -20,4 +20,9 @@ final class UserDetailsViewController: BaseViewController {
 	// MARK: - MVVM
 
 	var viewModel: UserDetailsViewModel!
-	override var stepper: Stepper! { viewMo
+	override var stepper: Stepper! { viewModel }
+
+	// MARK: - Outlets
+
+	@IBOutlet var avatarImageView: UIImageView! {
+		didSet {  avatarI
