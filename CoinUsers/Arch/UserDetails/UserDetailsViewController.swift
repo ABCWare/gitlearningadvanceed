@@ -30,4 +30,5 @@ final class UserDetailsViewController: BaseViewController {
 	@IBOutlet fileprivate var ageRow: UserDetailRowView!
 	@IBOutlet fileprivate var genderRow: UserDetailRowView!
 	@IBOutlet fileprivate var emailRow: UserDetailRowView! { didSet { emailRow.delegate = viewModel }}
-	@IBOutlet fileprivate var phoneRow: UserDetailRowVie
+	@IBOutlet fileprivate var phoneRow: UserDetailRowView! { didSet { phoneRow.delegate = viewModel }}
+	@IBOutlet fileprivate var addressRow: UserDeta
