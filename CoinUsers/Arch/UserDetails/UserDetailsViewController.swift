@@ -42,4 +42,10 @@ final class UserDetailsViewController: BaseViewController {
 
 	// MARK: - Lifecycle
 
-	overr
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		doBindings()
+	}
+
+	// MARK: - Reacti
