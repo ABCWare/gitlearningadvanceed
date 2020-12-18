@@ -36,4 +36,10 @@ final class UserDetailsViewController: BaseViewController {
 
 	lazy var actionButtonItem: UIBarButtonItem = {
 		let barButtonItem = UIBarButtonItem()
-		navigationItem.rightBarB
+		navigationItem.rightBarButtonItem = barButtonItem
+		return barButtonItem
+	}()
+
+	// MARK: - Lifecycle
+
+	overr
