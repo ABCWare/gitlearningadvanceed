@@ -25,4 +25,6 @@ final class UserDetailsViewController: BaseViewController {
 	// MARK: - Outlets
 
 	@IBOutlet var avatarImageView: UIImageView! {
-		didSet {  avatarI
+		didSet {  avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2 }
+	}
+	@IBOutlet filepriv
