@@ -27,4 +27,5 @@ final class UserDetailsViewController: BaseViewController {
 	@IBOutlet var avatarImageView: UIImageView! {
 		didSet {  avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2 }
 	}
-	@IBOutlet filepriv
+	@IBOutlet fileprivate var ageRow: UserDetailRowView!
+	@IBOutlet fileprivate var genderRow: UserDetailR
