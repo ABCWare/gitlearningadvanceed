@@ -34,4 +34,6 @@ final class UserDetailsViewController: BaseViewController {
 	@IBOutlet fileprivate var addressRow: UserDetailRowView!
 	@IBOutlet fileprivate var mapView: MKMapView!
 
-	lazy var actionButtonItem: UIBarButtonItem = 
+	lazy var actionButtonItem: UIBarButtonItem = {
+		let barButtonItem = UIBarButtonItem()
+		navigationItem.rightBarB
