@@ -48,4 +48,9 @@ final class UserDetailsViewController: BaseViewController {
 		doBindings()
 	}
 
-	// MARK: - Reacti
+	// MARK: - Reactive
+
+	private func doBindings() {
+		viewModel.user
+			.bind(to: rx.user)
+			.disposed(by: disposeBag)
