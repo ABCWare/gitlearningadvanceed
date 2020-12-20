@@ -54,3 +54,7 @@ final class UserDetailsViewController: BaseViewController {
 		viewModel.user
 			.bind(to: rx.user)
 			.disposed(by: disposeBag)
+
+		viewModel.isSaved
+			.map { isSaved in isSaved ? .heartFill: .heart }
+			.
