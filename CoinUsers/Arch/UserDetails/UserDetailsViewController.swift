@@ -57,4 +57,8 @@ final class UserDetailsViewController: BaseViewController {
 
 		viewModel.isSaved
 			.map { isSaved in isSaved ? .heartFill: .heart }
-			.
+			.bind(to: actionButtonItem.rx.image)
+			.disposed(by: disposeBag)
+
+		actionButtonItem.rx.tap
+			.bind(to: 
