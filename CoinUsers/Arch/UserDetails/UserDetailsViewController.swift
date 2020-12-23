@@ -65,4 +65,5 @@ final class UserDetailsViewController: BaseViewController {
 			.disposed(by: disposeBag)
 
 		viewModel.action
-			.with
+			.withLatestFrom(viewModel.user) { ($0, $1) }
+			.subscribe(onNext: { [weak self] action, u
