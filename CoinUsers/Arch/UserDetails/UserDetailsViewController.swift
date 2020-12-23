@@ -61,4 +61,8 @@ final class UserDetailsViewController: BaseViewController {
 			.disposed(by: disposeBag)
 
 		actionButtonItem.rx.tap
-			.bind(to: 
+			.bind(to: viewModel.actionTapped)
+			.disposed(by: disposeBag)
+
+		viewModel.action
+			.with
