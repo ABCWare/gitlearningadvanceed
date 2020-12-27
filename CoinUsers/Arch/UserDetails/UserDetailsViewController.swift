@@ -66,4 +66,6 @@ final class UserDetailsViewController: BaseViewController {
 
 		viewModel.action
 			.withLatestFrom(viewModel.user) { ($0, $1) }
-			.subscribe(onNext: { [weak self] action, u
+			.subscribe(onNext: { [weak self] action, user in
+				switch action {
+				case .phone: self?.callTo(phoneNumber: user.phone)
