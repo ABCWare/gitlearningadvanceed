@@ -72,4 +72,8 @@ final class UserDetailsViewController: BaseViewController {
 				case .email: self?.emailTo(email: user.email)
 				}
 			})
-			.disposed(by: disposeBag
+			.disposed(by: disposeBag)
+	}
+
+	func callTo(phoneNumber: String) {
+		if !phoneNumber.isEmpty, let encoded = phoneNum
