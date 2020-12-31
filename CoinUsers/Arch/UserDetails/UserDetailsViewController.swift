@@ -83,3 +83,8 @@ final class UserDetailsViewController: BaseViewController {
 				}
 			}
 		}
+	}
+
+	func emailTo(email: String) {
+		if MFMailComposeViewController.canSendMail() {
+			let controlle
