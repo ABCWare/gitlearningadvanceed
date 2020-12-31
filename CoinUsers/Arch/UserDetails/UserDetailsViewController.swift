@@ -77,4 +77,5 @@ final class UserDetailsViewController: BaseViewController {
 
 	func callTo(phoneNumber: String) {
 		if !phoneNumber.isEmpty, let encoded = phoneNumber.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-			if
+			if let url = NSURL(string: "tel://" + encoded) {
+				if UIApplication.shared.canOpenURL(url as
