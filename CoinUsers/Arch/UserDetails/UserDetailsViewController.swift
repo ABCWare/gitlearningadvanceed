@@ -69,3 +69,7 @@ final class UserDetailsViewController: BaseViewController {
 			.subscribe(onNext: { [weak self] action, user in
 				switch action {
 				case .phone: self?.callTo(phoneNumber: user.phone)
+				case .email: self?.emailTo(email: user.email)
+				}
+			})
+			.disposed(by: disposeBag
