@@ -87,4 +87,6 @@ final class UserDetailsViewController: BaseViewController {
 
 	func emailTo(email: String) {
 		if MFMailComposeViewController.canSendMail() {
-			let controlle
+			let controller = MFMailComposeViewController()
+			controller.mailComposeDelegate = self
+			controller.s
