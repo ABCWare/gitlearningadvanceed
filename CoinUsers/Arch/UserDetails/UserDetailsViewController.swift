@@ -89,4 +89,6 @@ final class UserDetailsViewController: BaseViewController {
 		if MFMailComposeViewController.canSendMail() {
 			let controller = MFMailComposeViewController()
 			controller.mailComposeDelegate = self
-			controller.s
+			controller.setToRecipients([email])
+			present(controller, animated: true)
+		} else 
