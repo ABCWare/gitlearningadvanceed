@@ -91,4 +91,10 @@ final class UserDetailsViewController: BaseViewController {
 			controller.mailComposeDelegate = self
 			controller.setToRecipients([email])
 			present(controller, animated: true)
-		} else 
+		} else {
+			fatalError()
+		}
+	}
+}
+
+// MARK: MFMailComposeViewControllerDelega
