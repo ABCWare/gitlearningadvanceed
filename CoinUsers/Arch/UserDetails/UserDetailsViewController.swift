@@ -97,4 +97,7 @@ final class UserDetailsViewController: BaseViewController {
 	}
 }
 
-// MARK: MFMailComposeViewControllerDelega
+// MARK: MFMailComposeViewControllerDelegate
+
+extension UserDetailsViewController: MFMailComposeViewControllerDelegate {
+	func mailCom
