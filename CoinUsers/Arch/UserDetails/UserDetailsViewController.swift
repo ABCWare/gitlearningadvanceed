@@ -100,4 +100,6 @@ final class UserDetailsViewController: BaseViewController {
 // MARK: MFMailComposeViewControllerDelegate
 
 extension UserDetailsViewController: MFMailComposeViewControllerDelegate {
-	func mailCom
+	func mailComposeController(
+		_ controller: MFMailComposeViewController,
+		didFinishWith result: MFMai
