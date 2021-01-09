@@ -105,4 +105,9 @@ extension UserDetailsViewController: MFMailComposeViewControllerDelegate {
 		didFinishWith result: MFMailComposeResult,
 		error: Error?
 	) {
-		if let error = error { fatalError(error.loca
+		if let error = error { fatalError(error.localizedDescription) }
+		controller.dismiss(animated: true)
+	}
+}
+
+private extension Reactive whe
