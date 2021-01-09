@@ -118,4 +118,10 @@ private extension Reactive where Base: UserDetailsViewController {
 			vc.ageRow.value = String(user.age)
 			vc.genderRow.value = user.genderText
 			vc.emailRow.value = user.email
-			vc.phoneRow.value = user.ph
+			vc.phoneRow.value = user.phone
+			vc.addressRow.value = user.addressText
+			configure(vc.mapView, with: user)
+		}
+	}
+
+	privat
