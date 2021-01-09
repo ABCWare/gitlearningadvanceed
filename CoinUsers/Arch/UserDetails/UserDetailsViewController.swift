@@ -110,4 +110,7 @@ extension UserDetailsViewController: MFMailComposeViewControllerDelegate {
 	}
 }
 
-private extension Reactive whe
+private extension Reactive where Base: UserDetailsViewController {
+	var user: Binder<User> {
+		Binder(base) { vc, user in
+			v
