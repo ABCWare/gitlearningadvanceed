@@ -116,4 +116,6 @@ private extension Reactive where Base: UserDetailsViewController {
 			vc.title = user.fullName
 			vc.avatarImageView.kf.setImage(with: user.avatar, placeholder: UIImage.person)
 			vc.ageRow.value = String(user.age)
-			vc.ge
+			vc.genderRow.value = user.genderText
+			vc.emailRow.value = user.email
+			vc.phoneRow.value = user.ph
