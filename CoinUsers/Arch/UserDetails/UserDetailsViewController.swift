@@ -102,4 +102,7 @@ final class UserDetailsViewController: BaseViewController {
 extension UserDetailsViewController: MFMailComposeViewControllerDelegate {
 	func mailComposeController(
 		_ controller: MFMailComposeViewController,
-		didFinishWith result: MFMai
+		didFinishWith result: MFMailComposeResult,
+		error: Error?
+	) {
+		if let error = error { fatalError(error.loca
