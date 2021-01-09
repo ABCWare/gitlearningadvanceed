@@ -113,4 +113,5 @@ extension UserDetailsViewController: MFMailComposeViewControllerDelegate {
 private extension Reactive where Base: UserDetailsViewController {
 	var user: Binder<User> {
 		Binder(base) { vc, user in
-			v
+			vc.title = user.fullName
+			vc.avatarImageView.kf.setImage(with: user.av
