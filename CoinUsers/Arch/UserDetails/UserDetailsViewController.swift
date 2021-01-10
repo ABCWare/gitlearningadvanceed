@@ -124,4 +124,5 @@ private extension Reactive where Base: UserDetailsViewController {
 		}
 	}
 
-	privat
+	private func configure(_ mapView: MKMapView, with user: User) {
+		let coordinate = CLLo
