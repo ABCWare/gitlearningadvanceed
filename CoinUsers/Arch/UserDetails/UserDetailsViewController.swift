@@ -129,4 +129,5 @@ private extension Reactive where Base: UserDetailsViewController {
 		let annotation = MKPointAnnotation()
 		annotation.coordinate = coordinate
 		mapView.addAnnotation(annotation)
-		let region = MKCoordinateRegion(center: coordinate, span: MKCoordin
+		let region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100))
+		mapView.setRegion(region, anim
