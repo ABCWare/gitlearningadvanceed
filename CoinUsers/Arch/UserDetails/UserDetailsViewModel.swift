@@ -8,4 +8,9 @@
 import RxRelay
 import RxSwift
 
-// MARK: - UserDetailsView
+// MARK: - UserDetailsViewModel
+
+final class UserDetailsViewModel: BaseViewModel {
+	// MARK: - Context
+
+	
