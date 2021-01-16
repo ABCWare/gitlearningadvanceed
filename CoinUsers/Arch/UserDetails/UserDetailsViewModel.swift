@@ -13,4 +13,11 @@ import RxSwift
 final class UserDetailsViewModel: BaseViewModel {
 	// MARK: - Context
 
-	
+	struct Context {
+		let user: User
+		let isSaved: Bool
+	}
+
+	// MARK: - Inputs
+
+	let actionTapped
