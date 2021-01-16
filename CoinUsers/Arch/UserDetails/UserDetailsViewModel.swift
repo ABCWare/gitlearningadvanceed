@@ -20,4 +20,9 @@ final class UserDetailsViewModel: BaseViewModel {
 
 	// MARK: - Inputs
 
-	let actionTapped
+	let actionTapped = PublishRelay<Void>()
+	let delete = PublishRelay<User>()
+
+	// MARK: - Outputs
+
+	le
