@@ -25,4 +25,6 @@ final class UserDetailsViewModel: BaseViewModel {
 
 	// MARK: - Outputs
 
-	le
+	let user: BehaviorRelay<User>
+	let action = PublishRelay<UserDetailRowView.Action>()
+	let isSa
