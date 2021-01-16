@@ -27,4 +27,8 @@ final class UserDetailsViewModel: BaseViewModel {
 
 	let user: BehaviorRelay<User>
 	let action = PublishRelay<UserDetailRowView.Action>()
-	let isSa
+	let isSaved: BehaviorRelay<Bool>
+
+	// MARK: - Services
+
+	private let realmService:
