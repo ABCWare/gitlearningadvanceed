@@ -35,4 +35,6 @@ final class UserDetailsViewModel: BaseViewModel {
 
 	// MARK: - Init
 
-	init(realmService: RealmServiceProtocol, context: Context) 
+	init(realmService: RealmServiceProtocol, context: Context) {
+		self.realmService = realmService
+		self.user = BehaviorRelay(value: context.use
