@@ -31,4 +31,8 @@ final class UserDetailsViewModel: BaseViewModel {
 
 	// MARK: - Services
 
-	private let realmService:
+	private let realmService: RealmServiceProtocol
+
+	// MARK: - Init
+
+	init(realmService: RealmServiceProtocol, context: Context) 
