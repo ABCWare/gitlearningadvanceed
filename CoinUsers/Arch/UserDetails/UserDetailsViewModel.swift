@@ -41,4 +41,10 @@ final class UserDetailsViewModel: BaseViewModel {
 		self.isSaved = BehaviorRelay(value: context.isSaved)
 		super.init()
 
-	
+		doBindings()
+	}
+
+	// MARK: - Reactive
+
+	private func doBindings() {
+		actionTapped
