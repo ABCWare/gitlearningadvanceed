@@ -48,3 +48,6 @@ final class UserDetailsViewModel: BaseViewModel {
 
 	private func doBindings() {
 		actionTapped
+			.withLatestFrom(user)
+			.withLatestFrom(isSaved) { ($0, $1) }
+			.fl
