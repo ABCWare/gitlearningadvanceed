@@ -51,4 +51,6 @@ final class UserDetailsViewModel: BaseViewModel {
 			.withLatestFrom(user)
 			.withLatestFrom(isSaved) { ($0, $1) }
 			.flatMap { [realmService] user, isSaved in
-				isSaved ? realmService.delete(user: user) : real
+				isSaved ? realmService.delete(user: user) : realmService.save(user: user)
+			}
+			.withLatestFrom(isSaved).map { !$0 }
