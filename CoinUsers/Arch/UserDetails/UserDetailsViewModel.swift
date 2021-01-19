@@ -54,3 +54,9 @@ final class UserDetailsViewModel: BaseViewModel {
 				isSaved ? realmService.delete(user: user) : realmService.save(user: user)
 			}
 			.withLatestFrom(isSaved).map { !$0 }
+			.bind(to: isSaved)
+			.disposed(by: disposeBag)
+	}
+}
+
+// MARK: UserDetailRowView
