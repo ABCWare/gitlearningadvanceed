@@ -59,4 +59,7 @@ final class UserDetailsViewModel: BaseViewModel {
 	}
 }
 
-// MARK: UserDetailRowView
+// MARK: UserDetailRowViewDelegate
+
+extension UserDetailsViewModel: UserDetailRowViewDelegate {
+	func did
