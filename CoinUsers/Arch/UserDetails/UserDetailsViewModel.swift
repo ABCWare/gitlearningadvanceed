@@ -62,4 +62,7 @@ final class UserDetailsViewModel: BaseViewModel {
 // MARK: UserDetailRowViewDelegate
 
 extension UserDetailsViewModel: UserDetailRowViewDelegate {
-	func did
+	func didSelectAction(_ action: UserDetailRowView.Action) {
+		self.action.accept(action)
+	}
+}
