@@ -28,4 +28,10 @@
     {
       "idiom" : "iphone",
       "scale" : "3x",
-      "size" :
+      "size" : "40x40"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+   
