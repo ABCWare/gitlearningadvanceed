@@ -8,4 +8,8 @@
     {
       "idiom" : "iphone",
       "scale" : "3x",
-     
+      "size" : "20x20"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x",
