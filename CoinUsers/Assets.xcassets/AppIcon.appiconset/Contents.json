@@ -57,4 +57,10 @@
     },
     {
       "idiom" : "ipad",
-      "scale"
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "
