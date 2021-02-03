@@ -73,4 +73,9 @@
     {
       "idiom" : "ipad",
       "scale" : "1x",
-      "size" : "76x
+      "size" : "76x76"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "76x7
