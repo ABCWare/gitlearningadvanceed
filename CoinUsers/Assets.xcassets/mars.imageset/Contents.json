@@ -1,4 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "mars.svg"
+      "filename" : "mars.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+ 
