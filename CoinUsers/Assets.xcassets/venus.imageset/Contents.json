@@ -10,4 +10,5 @@
     "version" : 1
   },
   "properties" : {
-    "preser
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "temp
