@@ -12,4 +12,5 @@ import RxFlow
 import RxRelay
 import RxSwift
 
-class
+class BaseViewController: UIViewController, StoryboardBased {
+	let disposeBag = DisposeBag
