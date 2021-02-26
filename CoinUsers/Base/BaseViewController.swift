@@ -17,4 +17,8 @@ class BaseViewController: UIViewController, StoryboardBased {
 	var stepper: Stepper! { nil }
 	let error = PublishRelay<AlertableError>()
 
-	/
+	// MARK: - Lifecycle
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		setupNavi
