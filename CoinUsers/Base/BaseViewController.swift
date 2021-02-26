@@ -21,4 +21,9 @@ class BaseViewController: UIViewController, StoryboardBased {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		setupNavi
+		setupNavigationBar()
+		doBindings()
+	}
+
+	private func setupNavigationBar() {
+		let backItem = UIBarButtonItem
