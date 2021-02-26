@@ -13,4 +13,8 @@ import RxRelay
 import RxSwift
 
 class BaseViewController: UIViewController, StoryboardBased {
-	let disposeBag = DisposeBag
+	let disposeBag = DisposeBag()
+	var stepper: Stepper! { nil }
+	let error = PublishRelay<AlertableError>()
+
+	/
