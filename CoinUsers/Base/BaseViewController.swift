@@ -26,4 +26,7 @@ class BaseViewController: UIViewController, StoryboardBased {
 	}
 
 	private func setupNavigationBar() {
-		let backItem = UIBarButtonItem
+		let backItem = UIBarButtonItem()
+		backItem.title = nil
+		navigationItem.backBarButtonItem = backItem
+		navigationContr
