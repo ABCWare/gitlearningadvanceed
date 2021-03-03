@@ -29,4 +29,11 @@ class BaseViewController: UIViewController, StoryboardBased {
 		let backItem = UIBarButtonItem()
 		backItem.title = nil
 		navigationItem.backBarButtonItem = backItem
-		navigationContr
+		navigationController?.navigationBar.tintColor = .main1
+	}
+
+	// MARK: - Reactive
+
+	private func doBindings() {
+		error
+			.
