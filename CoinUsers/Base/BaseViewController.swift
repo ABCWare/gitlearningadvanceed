@@ -36,4 +36,5 @@ class BaseViewController: UIViewController, StoryboardBased {
 
 	private func doBindings() {
 		error
-			.
+			.subscribe(onNext: { [weak self] in self?.showErrorAlert($0) })
+			.disposed(by: disposeBag)
