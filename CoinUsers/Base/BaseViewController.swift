@@ -38,3 +38,9 @@ class BaseViewController: UIViewController, StoryboardBased {
 		error
 			.subscribe(onNext: { [weak self] in self?.showErrorAlert($0) })
 			.disposed(by: disposeBag)
+	}
+
+	// MARK: - Alerts
+
+	private func showErrorAlert(_ error: AlertableError) {
+		let alert = UIAlertCont
