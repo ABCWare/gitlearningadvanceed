@@ -43,4 +43,5 @@ class BaseViewController: UIViewController, StoryboardBased {
 	// MARK: - Alerts
 
 	private func showErrorAlert(_ error: AlertableError) {
-		let alert = UIAlertCont
+		let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
+		alert.addAction(.
