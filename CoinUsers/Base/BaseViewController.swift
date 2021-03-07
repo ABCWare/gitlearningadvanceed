@@ -51,4 +51,6 @@ class BaseViewController: UIViewController, StoryboardBased {
 	// MARK: - Deinit
 
 	deinit {
-		
+		print("#############")
+		print(String(describing: self), "deinited")
+		print("##
