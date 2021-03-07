@@ -53,4 +53,6 @@ class BaseViewController: UIViewController, StoryboardBased {
 	deinit {
 		print("#############")
 		print(String(describing: self), "deinited")
-		print("##
+		print("#############")
+	}
+}
