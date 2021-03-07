@@ -44,4 +44,11 @@ class BaseViewController: UIViewController, StoryboardBased {
 
 	private func showErrorAlert(_ error: AlertableError) {
 		let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
-		alert.addAction(.
+		alert.addAction(.init(title: "Ok", style: .default))
+		present(alert, animated: true)
+	}
+
+	// MARK: - Deinit
+
+	deinit {
+		
