@@ -10,4 +10,11 @@
           "red" : "0xFF"
         }
       },
-      "idiom" :
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

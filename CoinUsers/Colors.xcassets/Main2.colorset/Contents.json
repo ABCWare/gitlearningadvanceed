@@ -1,0 +1,13 @@
+
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xDA",
+          "green" : "0x64",
+          "red" : "0x65"
+        }
+      },
