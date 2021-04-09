@@ -11,4 +11,9 @@ import SwinjectAutoregistration
 import RxFlow
 import RxRelay
 
-i
+import UIKit
+
+// MARK: - AppFlow
+
+final class AppFlow: Flow {
+	var root: Presentable { rootViewControlle
