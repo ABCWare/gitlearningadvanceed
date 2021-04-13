@@ -16,4 +16,7 @@ import UIKit
 // MARK: - AppFlow
 
 final class AppFlow: Flow {
-	var root: Presentable { rootViewControlle
+	var root: Presentable { rootViewController }
+
+	private let rootViewController: UITabBarController = {
+		let tabBarController = UITabBarC
