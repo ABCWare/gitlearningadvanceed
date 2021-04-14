@@ -27,4 +27,8 @@ final class AppFlow: Flow {
 	private var parentAssembler: Assembler
 
 	init(parentAssembler: Assembler) {
-		self.parentAssembl
+		self.parentAssembler = parentAssembler
+	}
+
+	func navigate(to step: Step) -> FlowContributors {
+		guard (step as? AppStep) == .ma
