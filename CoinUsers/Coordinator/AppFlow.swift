@@ -19,4 +19,8 @@ final class AppFlow: Flow {
 	var root: Presentable { rootViewController }
 
 	private let rootViewController: UITabBarController = {
-		let tabBarController = UITabBarC
+		let tabBarController = UITabBarController()
+		tabBarController.tabBar.tintColor = .main1
+		return tabBarController
+	}()
+
