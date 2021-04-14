@@ -24,3 +24,7 @@ final class AppFlow: Flow {
 		return tabBarController
 	}()
 
+	private var parentAssembler: Assembler
+
+	init(parentAssembler: Assembler) {
+		self.parentAssembl
