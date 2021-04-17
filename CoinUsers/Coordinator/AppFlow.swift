@@ -31,4 +31,8 @@ final class AppFlow: Flow {
 	}
 
 	func navigate(to step: Step) -> FlowContributors {
-		guard (step as? AppStep) == .ma
+		guard (step as? AppStep) == .main else { return .none }
+		return initFlows(for: MainTab.allCases)
+	}
+
+	private func initFlows(for
