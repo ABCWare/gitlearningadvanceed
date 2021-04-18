@@ -35,4 +35,5 @@ final class AppFlow: Flow {
 		return initFlows(for: MainTab.allCases)
 	}
 
-	private func initFlows(for
+	private func initFlows(for tabs: [MainTab]) -> FlowContributors {
+		let flowConfigs = tabs.map { [weak self] in self?
