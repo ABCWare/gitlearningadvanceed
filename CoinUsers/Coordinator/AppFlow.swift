@@ -38,4 +38,7 @@ final class AppFlow: Flow {
 	private func initFlows(for tabs: [MainTab]) -> FlowContributors {
 		let flowConfigs = tabs.map { [weak self] in self?.config(for: $0) }
 		let flows = flowConfigs.compactMap { $0?.0 }
-		let flowContri
+		let flowContributors = flowConfigs.compactMap { $0?.1 }
+
+		Flows.use(flows, when: .created) { vcs in
+		
