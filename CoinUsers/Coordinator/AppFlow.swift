@@ -36,4 +36,6 @@ final class AppFlow: Flow {
 	}
 
 	private func initFlows(for tabs: [MainTab]) -> FlowContributors {
-		let flowConfigs = tabs.map { [weak self] in self?
+		let flowConfigs = tabs.map { [weak self] in self?.config(for: $0) }
+		let flows = flowConfigs.compactMap { $0?.0 }
+		let flowContri
