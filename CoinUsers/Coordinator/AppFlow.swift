@@ -41,4 +41,5 @@ final class AppFlow: Flow {
 		let flowContributors = flowConfigs.compactMap { $0?.1 }
 
 		Flows.use(flows, when: .created) { vcs in
-		
+			tabs.enumerated().forEach { index, tab in
+				let item = UITabBarItem(title: tab.title, i
