@@ -43,4 +43,8 @@ final class AppFlow: Flow {
 		Flows.use(flows, when: .created) { vcs in
 			tabs.enumerated().forEach { index, tab in
 				let item = UITabBarItem(title: tab.title, image: tab.image, selectedImage: tab.selectedImage)
-				vcs[index].tabBarIt
+				vcs[index].tabBarItem = item
+			}
+			self.rootViewController.setViewControllers(vcs, animated: false)
+		}
+
