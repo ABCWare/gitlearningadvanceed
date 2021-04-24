@@ -48,3 +48,7 @@ final class AppFlow: Flow {
 			self.rootViewController.setViewControllers(vcs, animated: false)
 		}
 
+		return .multiple(flowContributors: flowContributors)
+	}
+
+	private func config(for tab: Mai
