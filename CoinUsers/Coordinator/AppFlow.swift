@@ -51,4 +51,8 @@ final class AppFlow: Flow {
 		return .multiple(flowContributors: flowContributors)
 	}
 
-	private func config(for tab: Mai
+	private func config(for tab: MainTab) -> (Flow, FlowContributor) {
+		let flow: Flow
+		let stepper: Stepper
+
+		switch t
