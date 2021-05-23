@@ -57,4 +57,5 @@ final class AppFlow: Flow {
 
 		switch tab {
 		case .remoteUsers:
-			flow = parentAssembler.resolver ~> (RemoteUsersFlow.self, a
+			flow = parentAssembler.resolver ~> (RemoteUsersFlow.self, argument: parentAssembler)
+			stepper = OneStepper(withSingleStep: Remote
