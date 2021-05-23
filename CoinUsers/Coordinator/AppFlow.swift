@@ -60,4 +60,5 @@ final class AppFlow: Flow {
 			flow = parentAssembler.resolver ~> (RemoteUsersFlow.self, argument: parentAssembler)
 			stepper = OneStepper(withSingleStep: RemoteUsersStep.root)
 		case .localUsers:
-			flow = parentAssembler.resolver ~> (LocalUsersFlow.sel
+			flow = parentAssembler.resolver ~> (LocalUsersFlow.self, argument: parentAssembler)
+			stepper = OneStepper(withSingleStep: LocalUsersStep.ro
