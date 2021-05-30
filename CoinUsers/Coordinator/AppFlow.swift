@@ -67,4 +67,10 @@ final class AppFlow: Flow {
 			stepper = OneStepper(withSingleStep: SettingsStep.root)
 		}
 
-		return (flow, .
+		return (flow, .contribute(withNextPresentable: flow, withNextStepper: stepper))
+	}
+}
+
+// MARK: - AppStepper
+
+fina
