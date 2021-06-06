@@ -10,4 +10,11 @@ import RxFlow
 // MARK: - AppStep
 
 enum AppStep: Step {
-	ca
+	case main
+}
+
+// MARK: - RemoteUsersStep
+
+enum RemoteUsersStep: Step {
+	case root
+	cas
