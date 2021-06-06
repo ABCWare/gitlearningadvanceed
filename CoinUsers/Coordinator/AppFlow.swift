@@ -76,4 +76,7 @@ final class AppFlow: Flow {
 final class AppStepper: Stepper {
 	let steps = PublishRelay<Step>()
 
-	func read
+	func readyToEmitSteps() {
+		steps.accept(AppStep.main)
+	}
+}
