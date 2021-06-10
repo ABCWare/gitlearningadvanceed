@@ -22,4 +22,6 @@ enum RemoteUsersStep: Step {
 
 // MARK: - LocalUsersStep
 
-enum L
+enum LocalUsersStep: Step {
+	case root
+	case details(context: UserDetailsViewModel.Context)
