@@ -8,4 +8,8 @@
 import Foundation
 import RxFlow
 import Swinject
-import SwinjectAutoregistrati
+import SwinjectAutoregistration
+import UIKit
+
+class NavigationFlow: Flow {
+	var root: Presentable { self.rootVie
