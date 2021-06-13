@@ -12,4 +12,6 @@ import SwinjectAutoregistration
 import UIKit
 
 class NavigationFlow: Flow {
-	var root: Presentable { self.rootVie
+	var root: Presentable { self.rootViewController }
+	private let rootViewController: UINavigationController
+	private(
