@@ -14,4 +14,7 @@ import UIKit
 class NavigationFlow: Flow {
 	var root: Presentable { self.rootViewController }
 	private let rootViewController: UINavigationController
-	private(
+	private(set) var assembler: Assembler!
+	var assemblies: [Assembly] { [] }
+
+	private let parentAssembler: Assembler?
