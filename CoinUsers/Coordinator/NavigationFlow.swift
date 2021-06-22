@@ -20,4 +20,7 @@ class NavigationFlow: Flow {
 	private let parentAssembler: Assembler?
 
 	convenience init(parentAssembler: Assembler) {
-		self.init(rootController: .init(), parentAssembl
+		self.init(rootController: .init(), parentAssembler: parentAssembler)
+	}
+
+	init(rootController: UINavigationController, par
