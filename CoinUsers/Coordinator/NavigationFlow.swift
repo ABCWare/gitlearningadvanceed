@@ -25,4 +25,5 @@ class NavigationFlow: Flow {
 
 	init(rootController: UINavigationController, parentAssembler: Assembler? = nil) {
 		self.rootViewController = rootController
-		s
+		self.parentAssembler = parentAssembler
+		self.assembler = Assembler(self.asse
