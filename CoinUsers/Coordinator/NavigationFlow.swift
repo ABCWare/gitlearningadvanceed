@@ -33,4 +33,5 @@ class NavigationFlow: Flow {
 
 	// MARK: - Push
 
-	func push<C: BaseViewController>(to viewContro
+	func push<C: BaseViewController>(to viewController: C.Type) -> FlowContributors {
+		let viewController = self.assembler.resolver
