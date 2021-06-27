@@ -26,4 +26,7 @@ class NavigationFlow: Flow {
 	init(rootController: UINavigationController, parentAssembler: Assembler? = nil) {
 		self.rootViewController = rootController
 		self.parentAssembler = parentAssembler
-		self.assembler = Assembler(self.asse
+		self.assembler = Assembler(self.assemblies, parent: parentAssembler)
+	}
+
+	func navigate(to step: Step) -> FlowContributors { .
