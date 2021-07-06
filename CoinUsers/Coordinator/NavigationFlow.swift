@@ -39,4 +39,5 @@ class NavigationFlow: Flow {
 		return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: viewController.stepper))
 	}
 
-	func push<C: BaseViewController, Arg>(to viewContr
+	func push<C: BaseViewController, Arg>(to viewController: C.Type, with argument: Arg) -> FlowContributors {
+		let viewController = self.assemb
