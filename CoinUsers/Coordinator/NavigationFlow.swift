@@ -41,4 +41,5 @@ class NavigationFlow: Flow {
 
 	func push<C: BaseViewController, Arg>(to viewController: C.Type, with argument: Arg) -> FlowContributors {
 		let viewController = self.assembler.resolver ~> (viewController.self, argument: argument)
-		self.rootViewController.pushV
+		self.rootViewController.pushViewController(viewController, animated: true)
+		return .one(flowContributor: .contribute(withNextPres
