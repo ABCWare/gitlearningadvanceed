@@ -7,4 +7,7 @@
 
 import RxFlow
 import Swinject
-import UIK
+import UIKit
+
+final class RemoteUsersFlow: NavigationFlow {
+	override var assemblies: [Assembly] { [U
