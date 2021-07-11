@@ -10,4 +10,5 @@ import Swinject
 import UIKit
 
 final class RemoteUsersFlow: NavigationFlow {
-	override var assemblies: [Assembly] { [U
+	override var assemblies: [Assembly] { [UsersAssembly()] }
+	override func navigate(to step: Step) -> FlowContribut
