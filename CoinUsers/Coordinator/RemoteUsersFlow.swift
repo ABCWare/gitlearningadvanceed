@@ -11,4 +11,7 @@ import UIKit
 
 final class RemoteUsersFlow: NavigationFlow {
 	override var assemblies: [Assembly] { [UsersAssembly()] }
-	override func navigate(to step: Step) -> FlowContribut
+	override func navigate(to step: Step) -> FlowContributors {
+		guard let step = step as? RemoteUsersStep else { return .none }
+
+		switch 
