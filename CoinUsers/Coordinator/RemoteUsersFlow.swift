@@ -14,4 +14,7 @@ final class RemoteUsersFlow: NavigationFlow {
 	override func navigate(to step: Step) -> FlowContributors {
 		guard let step = step as? RemoteUsersStep else { return .none }
 
-		switch 
+		switch step {
+		case .root:
+			return push(to: RemoteUsersViewController.self)
+		case 
