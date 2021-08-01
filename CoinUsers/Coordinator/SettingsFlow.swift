@@ -11,4 +11,5 @@ import UIKit
 
 final class SettingsFlow: NavigationFlow {
 	override var assemblies: [Assembly] { [SettingsAssembly()] }
-	override func navigate
+	override func navigate(to step: Step) -> FlowContributors {
+		guard let step = step as? SettingsStep else
