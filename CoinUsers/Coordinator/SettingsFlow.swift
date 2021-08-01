@@ -10,3 +10,5 @@ import Swinject
 import UIKit
 
 final class SettingsFlow: NavigationFlow {
+	override var assemblies: [Assembly] { [SettingsAssembly()] }
+	override func navigate
