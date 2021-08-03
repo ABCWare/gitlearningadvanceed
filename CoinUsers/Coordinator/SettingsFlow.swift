@@ -12,4 +12,8 @@ import UIKit
 final class SettingsFlow: NavigationFlow {
 	override var assemblies: [Assembly] { [SettingsAssembly()] }
 	override func navigate(to step: Step) -> FlowContributors {
-		guard let step = step as? SettingsStep else
+		guard let step = step as? SettingsStep else { return .none }
+
+		switch step {
+		case .root:
+			return push(to: SettingsViewControlle
