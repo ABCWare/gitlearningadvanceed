@@ -16,4 +16,7 @@ final class SettingsFlow: NavigationFlow {
 
 		switch step {
 		case .root:
-			return push(to: SettingsViewControlle
+			return push(to: SettingsViewController.self)
+		}
+	}
+}
