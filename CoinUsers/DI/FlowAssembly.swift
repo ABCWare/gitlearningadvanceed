@@ -12,4 +12,5 @@ final class FlowAssembly: Assembly {
 	func assemble(container: Container) {
 		// MARK: - App
 
-		contai
+		container.register(AppFlow.self) { (_, assembler: Assembler) in
+			AppFlow(parentAssembler: assembler)
