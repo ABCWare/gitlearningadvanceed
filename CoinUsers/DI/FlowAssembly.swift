@@ -14,3 +14,10 @@ final class FlowAssembly: Assembly {
 
 		container.register(AppFlow.self) { (_, assembler: Assembler) in
 			AppFlow(parentAssembler: assembler)
+		}
+
+		// MARK: - Remote
+
+		container.autoregister(
+			RemoteUsersFlow.self,
+			ar
