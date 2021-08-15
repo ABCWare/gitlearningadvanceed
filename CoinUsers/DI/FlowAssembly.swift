@@ -20,4 +20,8 @@ final class FlowAssembly: Assembly {
 
 		container.autoregister(
 			RemoteUsersFlow.self,
-			ar
+			argument: Assembler.self,
+			initializer: RemoteUsersFlow.init
+		)
+
+		// MARK: - Loca
