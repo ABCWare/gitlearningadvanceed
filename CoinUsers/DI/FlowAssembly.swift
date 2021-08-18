@@ -24,4 +24,9 @@ final class FlowAssembly: Assembly {
 			initializer: RemoteUsersFlow.init
 		)
 
-		// MARK: - Loca
+		// MARK: - Local
+
+		container.autoregister(
+			LocalUsersFlow.self,
+			argument: Assembler.self,
+			initializer: Local
