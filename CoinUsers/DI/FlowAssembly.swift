@@ -29,4 +29,10 @@ final class FlowAssembly: Assembly {
 		container.autoregister(
 			LocalUsersFlow.self,
 			argument: Assembler.self,
-			initializer: Local
+			initializer: LocalUsersFlow.init
+		)
+
+		// MARK: - Settings
+
+		container.autoregister(
+			SettingsFlow.self
