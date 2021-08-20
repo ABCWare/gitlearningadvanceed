@@ -35,4 +35,9 @@ final class FlowAssembly: Assembly {
 		// MARK: - Settings
 
 		container.autoregister(
-			SettingsFlow.self
+			SettingsFlow.self,
+			argument: Assembler.self,
+			initializer: SettingsFlow.init
+		)
+	}
+}
