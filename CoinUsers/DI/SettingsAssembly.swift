@@ -8,4 +8,6 @@
 import Swinject
 import SwinjectAutoregistration
 
-final cl
+final class SettingsAssembly: Assembly {
+	func assemble(container: Container) {
+		/
