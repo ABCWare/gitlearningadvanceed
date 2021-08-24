@@ -10,4 +10,6 @@ import SwinjectAutoregistration
 
 final class SettingsAssembly: Assembly {
 	func assemble(container: Container) {
-		/
+		// MARK: - Settings
+
+		container.autoregister(SettingsViewModel.self, initializer: SettingsView
