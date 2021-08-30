@@ -12,4 +12,6 @@ final class SettingsAssembly: Assembly {
 	func assemble(container: Container) {
 		// MARK: - Settings
 
-		container.autoregister(SettingsViewModel.self, initializer: SettingsView
+		container.autoregister(SettingsViewModel.self, initializer: SettingsViewModel.init)
+		container.register(SettingsViewController.self) { r in
+			let controller =
