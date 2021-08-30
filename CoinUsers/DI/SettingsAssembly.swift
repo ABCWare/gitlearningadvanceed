@@ -16,3 +16,5 @@ final class SettingsAssembly: Assembly {
 		container.register(SettingsViewController.self) { r in
 			let controller = SettingsViewController.instantiate()
 			controller.title = MainTab.settings.title
+			controller.viewModel = r ~> SettingsViewModel.self
+			return controll
