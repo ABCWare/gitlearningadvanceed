@@ -9,4 +9,6 @@ import UIKit
 
 extension UIColor {
 	static let main1 = UIColor(named: "main1")!
-	static let ma
+	static let main2 = UIColor(named: "main2")!
+	static let main3 = UIColor(named: "main3")!
+}
