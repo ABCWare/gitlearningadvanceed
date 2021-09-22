@@ -5,4 +5,7 @@
 //  Created by Hovak Davtyan on 13.05.21.
 //
 
-i
+import UIKit
+
+extension UIImage {
+	static let person = UIImage(systemName: "person.crop.circle")!
