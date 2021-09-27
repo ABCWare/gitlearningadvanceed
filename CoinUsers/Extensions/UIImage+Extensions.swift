@@ -10,4 +10,5 @@ import UIKit
 extension UIImage {
 	static let person = UIImage(systemName: "person.crop.circle")!
 	static let heart = UIImage(systemName: "heart")!
-	static let heartFill = UIImage(systemName:
+	static let heartFill = UIImage(systemName: "heart.fill")!
+	static let arrow = UIImage(systemName: "arrowshape.turn.u
