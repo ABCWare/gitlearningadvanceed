@@ -28,4 +28,6 @@
 		<dict>
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
-			
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Conf
