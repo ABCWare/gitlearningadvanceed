@@ -34,4 +34,9 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>LaunchScre
+					<string>LaunchScreen</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationSuppor
