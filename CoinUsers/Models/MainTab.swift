@@ -7,4 +7,9 @@
 
 import UIKit
 
-enum M
+enum MainTab: String, CaseIterable {
+	case remoteUsers
+	case localUsers
+	case settings
+
+	p
