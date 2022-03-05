@@ -12,4 +12,7 @@ enum MainTab: String, CaseIterable {
 	case localUsers
 	case settings
 
-	p
+	private var symbolName: String {
+		switch self {
+		case .remoteUsers: return "person.2"
+		case
