@@ -15,4 +15,6 @@ enum MainTab: String, CaseIterable {
 	private var symbolName: String {
 		switch self {
 		case .remoteUsers: return "person.2"
-		case
+		case .localUsers: return "heart"
+		case .settings: return "square.grid.3x1.below.line.grid.1x2"
+		}
