@@ -18,3 +18,9 @@ enum MainTab: String, CaseIterable {
 		case .localUsers: return "heart"
 		case .settings: return "square.grid.3x1.below.line.grid.1x2"
 		}
+	}
+
+	var title: String {
+		switch self {
+		case .remoteUsers: return "Users"
+		case .loc
