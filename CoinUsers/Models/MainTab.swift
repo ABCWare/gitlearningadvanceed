@@ -29,3 +29,9 @@ enum MainTab: String, CaseIterable {
 	}
 
 	var image: UIImage? {
+		UIImage(systemName: symbolName)
+	}
+
+	var selectedImage: UIImage? {
+		switch self {
+		c
