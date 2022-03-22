@@ -34,4 +34,6 @@ enum MainTab: String, CaseIterable {
 
 	var selectedImage: UIImage? {
 		switch self {
-		c
+		case .localUsers, .remoteUsers:
+			return UIImage(systemName: symbolName + ".fill")
+		case .settin
