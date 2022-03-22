@@ -23,4 +23,9 @@ enum MainTab: String, CaseIterable {
 	var title: String {
 		switch self {
 		case .remoteUsers: return "Users"
-		case .loc
+		case .localUsers: return "Saved"
+		case .settings: return "Settings"
+		}
+	}
+
+	var image: UIImage? {
