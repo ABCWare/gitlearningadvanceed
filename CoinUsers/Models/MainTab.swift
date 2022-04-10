@@ -36,4 +36,8 @@ enum MainTab: String, CaseIterable {
 		switch self {
 		case .localUsers, .remoteUsers:
 			return UIImage(systemName: symbolName + ".fill")
-		case .settin
+		case .settings:
+			return UIImage(systemName: "square.grid.3x1.fill.below.line.grid.1x2")
+		}
+	}
+}
