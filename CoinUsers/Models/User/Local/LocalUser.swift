@@ -1,0 +1,5 @@
+//
+//  LocalUser.swift
+//  CoinUsers
+//
+// 
