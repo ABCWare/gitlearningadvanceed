@@ -10,4 +10,7 @@ import Foundation
 protocol Address {
 	var country: String { get }
 	var state: String { get }
-	var city: String { get
+	var city: String { get }
+	var streetName: String { get }
+	var streetNumber: String { get }
+	var latitude: Doub
