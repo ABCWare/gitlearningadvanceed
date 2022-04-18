@@ -8,4 +8,8 @@
 import Foundation
 import RealmSwift
 
-// MARK:
+// MARK: - LocalUser
+
+final class LocalUser: Object {
+	@objc dynamic var _id: String!
+	@objc dynamic var _a
