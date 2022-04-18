@@ -12,4 +12,7 @@ import RealmSwift
 
 final class LocalUser: Object {
 	@objc dynamic var _id: String!
-	@objc dynamic var _a
+	@objc dynamic var _avatarURL: String!
+	@objc dynamic var _title: String!
+	@objc dynamic var _firstName: String!
+	@
