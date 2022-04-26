@@ -15,4 +15,5 @@ final class LocalUser: Object {
 	@objc dynamic var _avatarURL: String!
 	@objc dynamic var _title: String!
 	@objc dynamic var _firstName: String!
-	@
+	@objc dynamic var _lastName: String!
+	@objc dynamic var _gender: String!
