@@ -17,3 +17,6 @@ final class LocalUser: Object {
 	@objc dynamic var _firstName: String!
 	@objc dynamic var _lastName: String!
 	@objc dynamic var _gender: String!
+	@objc dynamic var _age = -1
+	@objc dynamic var _email: String!
+	@objc 
