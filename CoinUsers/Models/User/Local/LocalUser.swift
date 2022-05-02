@@ -22,4 +22,9 @@ final class LocalUser: Object {
 	@objc dynamic var _phone: String!
 	@objc dynamic var _address: LocalAddress!
 
-	convenience init(user: User
+	convenience init(user: User) {
+		self.init()
+
+		_id = user.id
+		_avatarURL = user.avatar?.absoluteString
+		_title = user.ti
