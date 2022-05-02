@@ -27,4 +27,9 @@ final class LocalUser: Object {
 
 		_id = user.id
 		_avatarURL = user.avatar?.absoluteString
-		_title = user.ti
+		_title = user.title
+		_firstName = user.firstName
+		_lastName = user.lastName
+		_gender = user.genderText
+		_age = user.age
+	
