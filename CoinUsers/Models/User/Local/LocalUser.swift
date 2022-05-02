@@ -19,4 +19,7 @@ final class LocalUser: Object {
 	@objc dynamic var _gender: String!
 	@objc dynamic var _age = -1
 	@objc dynamic var _email: String!
-	@objc 
+	@objc dynamic var _phone: String!
+	@objc dynamic var _address: LocalAddress!
+
+	convenience init(user: User
