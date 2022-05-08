@@ -32,4 +32,6 @@ final class LocalUser: Object {
 		_lastName = user.lastName
 		_gender = user.genderText
 		_age = user.age
-	
+		_email = user.email
+		_phone = user.phone
+		_address = LocalAddress(address: user.add
