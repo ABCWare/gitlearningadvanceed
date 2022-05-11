@@ -34,4 +34,12 @@ final class LocalUser: Object {
 		_age = user.age
 		_email = user.email
 		_phone = user.phone
-		_address = LocalAddress(address: user.add
+		_address = LocalAddress(address: user.address)
+	}
+}
+
+// MARK: User
+
+extension LocalUser: User {
+	var id: String { _id }
+	var avat
