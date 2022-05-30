@@ -42,4 +42,6 @@ final class LocalUser: Object {
 
 extension LocalUser: User {
 	var id: String { _id }
-	var avat
+	var avatar: URL? { URL(string: _avatarURL) }
+	var title: String { _title }
+	var firstName: String
