@@ -44,4 +44,6 @@ extension LocalUser: User {
 	var id: String { _id }
 	var avatar: URL? { URL(string: _avatarURL) }
 	var title: String { _title }
-	var firstName: String
+	var firstName: String { _firstName }
+	var lastName: String { _lastName }
+	var genderText: String { _gende
