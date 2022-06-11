@@ -46,4 +46,8 @@ extension LocalUser: User {
 	var title: String { _title }
 	var firstName: String { _firstName }
 	var lastName: String { _lastName }
-	var genderText: String { _gende
+	var genderText: String { _gender }
+	var age: Int { _age }
+	var email: String { _email }
+	var phone: String { _phone }
+	var ad
