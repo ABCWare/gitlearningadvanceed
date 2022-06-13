@@ -50,4 +50,9 @@ extension LocalUser: User {
 	var age: Int { _age }
 	var email: String { _email }
 	var phone: String { _phone }
-	var ad
+	var address: Address { _address }
+}
+
+// MARK: - LocalAddress
+
+class LocalAddress: Object 
