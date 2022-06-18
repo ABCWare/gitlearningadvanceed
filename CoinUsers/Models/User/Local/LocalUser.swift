@@ -58,4 +58,6 @@ extension LocalUser: User {
 class LocalAddress: Object {
 	@objc dynamic var _country: String!
 	@objc dynamic var _state: String!
-	@objc dynamic var _city: Strin
+	@objc dynamic var _city: String!
+	@objc dynamic var _streetName: String!
+	@objc dynamic var _streetNumber: S
