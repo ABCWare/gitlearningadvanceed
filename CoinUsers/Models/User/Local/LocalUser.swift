@@ -55,4 +55,7 @@ extension LocalUser: User {
 
 // MARK: - LocalAddress
 
-class LocalAddress: Object 
+class LocalAddress: Object {
+	@objc dynamic var _country: String!
+	@objc dynamic var _state: String!
+	@objc dynamic var _city: Strin
