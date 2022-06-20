@@ -72,4 +72,11 @@ class LocalAddress: Object {
 		_city = address.city
 		_streetName = address.streetName
 		_streetNumber = address.streetNumber
-	
+		_latitude = address.latitude
+		_longitude = address.longitude
+	}
+}
+
+// MARK: Address
+
+e
