@@ -69,4 +69,7 @@ class LocalAddress: Object {
 
 		_country = address.country
 		_state = address.state
-		_city = 
+		_city = address.city
+		_streetName = address.streetName
+		_streetNumber = address.streetNumber
+	
