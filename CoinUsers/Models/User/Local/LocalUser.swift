@@ -60,4 +60,8 @@ class LocalAddress: Object {
 	@objc dynamic var _state: String!
 	@objc dynamic var _city: String!
 	@objc dynamic var _streetName: String!
-	@objc dynamic var _streetNumber: S
+	@objc dynamic var _streetNumber: String!
+	@objc dynamic var _latitude = -1.0
+	@objc dynamic var _longitude = -1.0
+
+	convenience init(addr
