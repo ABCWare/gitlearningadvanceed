@@ -64,4 +64,9 @@ class LocalAddress: Object {
 	@objc dynamic var _latitude = -1.0
 	@objc dynamic var _longitude = -1.0
 
-	convenience init(addr
+	convenience init(address: Address) {
+		self.init()
+
+		_country = address.country
+		_state = address.state
+		_city = 
