@@ -79,4 +79,7 @@ class LocalAddress: Object {
 
 // MARK: Address
 
-e
+extension LocalAddress: Address {
+	var country: String { _country }
+	var state: String { _state }
+	va
