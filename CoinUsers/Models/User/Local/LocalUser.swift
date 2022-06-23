@@ -82,4 +82,6 @@ class LocalAddress: Object {
 extension LocalAddress: Address {
 	var country: String { _country }
 	var state: String { _state }
-	va
+	var city: String { _city }
+	var streetName: String { _streetName }
+	var streetNumber: Stri
