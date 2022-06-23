@@ -84,4 +84,6 @@ extension LocalAddress: Address {
 	var state: String { _state }
 	var city: String { _city }
 	var streetName: String { _streetName }
-	var streetNumber: Stri
+	var streetNumber: String { _streetNumber }
+	var latitude: Double { _latitude }
+	var longitude: Double
