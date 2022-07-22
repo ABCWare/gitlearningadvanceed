@@ -6,4 +6,6 @@
 //
 
 struct RemoteUsersRequest: Encodable {
-	let results: In
+	let results: Int
+	let page: Int
+}
