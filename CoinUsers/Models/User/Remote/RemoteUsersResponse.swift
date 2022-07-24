@@ -2,4 +2,8 @@
 //  RemoteUsersResponse.swift
 //  CoinUsers
 //
-//  Created by Ho
+//  Created by Hovak Davtyan on 11.05.21.
+//
+
+struct RemoteUsersResponse: Decodable {
+	let r
