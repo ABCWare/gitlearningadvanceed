@@ -6,4 +6,5 @@
 //
 
 struct RemoteUsersResponse: Decodable {
-	let r
+	let results: [RemoteUser]
+}
