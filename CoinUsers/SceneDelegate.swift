@@ -13,4 +13,6 @@ import RxSwift
 import Swinject
 import SwinjectAutoregistration
 
-class SceneDelegat
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+	let disposeBag = DisposeBag()
+	
