@@ -15,4 +15,5 @@ import SwinjectAutoregistration
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	let disposeBag = DisposeBag()
-	
+	let coordinator = FlowCoordinator()
+	private var parentAssembler = Assembler([FlowAssembly()
