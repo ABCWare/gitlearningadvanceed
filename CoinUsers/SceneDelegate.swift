@@ -19,4 +19,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	private var parentAssembler = Assembler([FlowAssembly(), ServiceAssembly()])
 	var window: UIWindow?
 
-	func scene(_ scene: UIScen
+	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.Connecti
