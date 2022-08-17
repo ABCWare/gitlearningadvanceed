@@ -24,4 +24,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		window = UIWindow(windowScene: windowScene)
 		guard let window = window else { return }
 
-		let appFlow = parentAssemble
+		let appFlow = parentAssembler.resolver ~> (AppFlow.self, argument: parentAssembler)
+		coordinator.coordinate(flow: appFlow,
