@@ -29,4 +29,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 		Flows.use(appFlow, when: .created) { root in
 			window.rootViewController = root
-			win
+			window.makeKeyAndVisible()
+		}
+	}
+
+	func sceneDidDisconnect(_ scene: UIScene) {
+		// Called 
