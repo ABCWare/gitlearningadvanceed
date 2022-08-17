@@ -25,4 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		guard let window = window else { return }
 
 		let appFlow = parentAssembler.resolver ~> (AppFlow.self, argument: parentAssembler)
-		coordinator.coordinate(flow: appFlow,
+		coordinator.coordinate(flow: appFlow, with: AppStepper())
+
+		Flows.use(appFlow, when: .created) { root in
+			window.rootViewController = root
+			win
