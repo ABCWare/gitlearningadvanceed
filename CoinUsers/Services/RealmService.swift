@@ -14,4 +14,9 @@ import RxSwift
 protocol RealmServiceProtocol {
 	func read() -> Single<[User]>
 	func save(user: User) -> Single<Void>
-	func
+	func delete(user: User) -> Single<Void>
+}
+
+// MARK: - RealmService
+
+final class RealmService: RealmSer
