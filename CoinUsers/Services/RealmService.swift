@@ -11,4 +11,7 @@ import RxSwift
 
 // MARK: - RealmServiceProtocol
 
-protocol Rea
+protocol RealmServiceProtocol {
+	func read() -> Single<[User]>
+	func save(user: User) -> Single<Void>
+	func
