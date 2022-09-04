@@ -19,4 +19,11 @@ protocol RealmServiceProtocol {
 
 // MARK: - RealmService
 
-final class RealmService: RealmSer
+final class RealmService: RealmServiceProtocol {
+	let realm: Realm
+
+	init(realm: Realm) {
+		self.realm = realm
+	}
+
+	func read() -> Single<[
