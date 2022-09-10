@@ -28,4 +28,11 @@ final class RealmService: RealmServiceProtocol {
 
 	func read() -> Single<[User]> {
 		Single.create { [realm] single in
-			let localUsers = Array(realm.objects(Local
+			let localUsers = Array(realm.objects(LocalUser.self))
+			single(.success(localUsers))
+
+			return Disposables.create()
+		}
+	}
+
+	func 
