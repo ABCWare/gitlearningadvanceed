@@ -35,4 +35,6 @@ final class RealmService: RealmServiceProtocol {
 		}
 	}
 
-	func 
+	func save(user: User) -> Single<Void> {
+		Single.create { [realm] single in
+			let localUser
