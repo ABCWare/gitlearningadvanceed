@@ -37,4 +37,7 @@ final class RealmService: RealmServiceProtocol {
 
 	func save(user: User) -> Single<Void> {
 		Single.create { [realm] single in
-			let localUser
+			let localUser = LocalUser(user: user)
+			do {
+				try realm.write { realm.add(localUser) }
+				single(.success(
