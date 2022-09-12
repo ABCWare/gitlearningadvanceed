@@ -40,4 +40,10 @@ final class RealmService: RealmServiceProtocol {
 			let localUser = LocalUser(user: user)
 			do {
 				try realm.write { realm.add(localUser) }
-				single(.success(
+				single(.success(()))
+			} catch {
+				single(.failure(error))
+			}
+			return Disposables.create()
+		}
+	
