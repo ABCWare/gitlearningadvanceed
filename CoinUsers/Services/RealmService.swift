@@ -52,4 +52,8 @@ final class RealmService: RealmServiceProtocol {
 		Single.create { [realm] single in
 			let localUser = realm.objects(LocalUser.self).filter("_id = %@", user.id)
 			do {
-				try realm.write { realm.delet
+				try realm.write { realm.delete(localUser) }
+				single(.success(()))
+			} catch {
+				single(.failure(error))
+			}
