@@ -50,4 +50,6 @@ final class RealmService: RealmServiceProtocol {
 
 	func delete(user: User) -> Single<Void> {
 		Single.create { [realm] single in
-			let localUser = rea
+			let localUser = realm.objects(LocalUser.self).filter("_id = %@", user.id)
+			do {
+				try realm.write { realm.delet
