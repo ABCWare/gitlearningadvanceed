@@ -46,4 +46,8 @@ final class RealmService: RealmServiceProtocol {
 			}
 			return Disposables.create()
 		}
-	
+	}
+
+	func delete(user: User) -> Single<Void> {
+		Single.create { [realm] single in
+			let localUser = rea
