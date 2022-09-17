@@ -57,3 +57,7 @@ final class RealmService: RealmServiceProtocol {
 			} catch {
 				single(.failure(error))
 			}
+			return Disposables.create()
+		}
+	}
+}
