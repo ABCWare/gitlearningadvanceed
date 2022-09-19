@@ -11,4 +11,8 @@ import Alamofire
 
 import RxSwift
 
-// MARK: - 
+// MARK: - AlertableError
+
+protocol AlertableError: Error {
+	var title: String? { get }
+	var message
