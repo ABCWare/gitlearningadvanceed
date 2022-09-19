@@ -15,4 +15,9 @@ import RxSwift
 
 protocol AlertableError: Error {
 	var title: String? { get }
-	var message
+	var message: String? { get }
+}
+
+// MARK: - ServiceError
+
+enum RemoteServiceError: AlertableError {
