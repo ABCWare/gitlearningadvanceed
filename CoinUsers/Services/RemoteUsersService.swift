@@ -21,3 +21,6 @@ protocol AlertableError: Error {
 // MARK: - ServiceError
 
 enum RemoteServiceError: AlertableError {
+	case networkError(title: String? = "Network Error", message: String? = nil)
+
+	var title: Strin
