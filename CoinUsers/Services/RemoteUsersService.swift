@@ -23,4 +23,10 @@ protocol AlertableError: Error {
 enum RemoteServiceError: AlertableError {
 	case networkError(title: String? = "Network Error", message: String? = nil)
 
-	var title: Strin
+	var title: String? {
+		switch self {
+		case .networkError(let title, _): return title
+		}
+	}
+
+	var 
