@@ -29,4 +29,7 @@ enum RemoteServiceError: AlertableError {
 		}
 	}
 
-	var 
+	var message: String? {
+		switch self {
+		case .networkError(_, let message): return message
+		}
