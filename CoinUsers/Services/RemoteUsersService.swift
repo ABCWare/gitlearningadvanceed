@@ -39,4 +39,9 @@ enum RemoteServiceError: AlertableError {
 // MARK: - UsersServiceProtocol
 
 protocol RemoteUsersServiceProtocol {
-	func rea
+	func read(with parameters: RemoteUsersRequest) -> Single<[User]>
+}
+
+// MARK: - UsersService
+
+final cl
