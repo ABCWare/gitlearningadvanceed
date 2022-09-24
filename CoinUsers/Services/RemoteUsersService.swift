@@ -44,4 +44,6 @@ protocol RemoteUsersServiceProtocol {
 
 // MARK: - UsersService
 
-final cl
+final class RemoteUsersService: RemoteUsersServiceProtocol {
+	private let session: Session
+	private
