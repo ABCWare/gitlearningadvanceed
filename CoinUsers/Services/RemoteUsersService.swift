@@ -33,3 +33,10 @@ enum RemoteServiceError: AlertableError {
 		switch self {
 		case .networkError(_, let message): return message
 		}
+	}
+}
+
+// MARK: - UsersServiceProtocol
+
+protocol RemoteUsersServiceProtocol {
+	func rea
