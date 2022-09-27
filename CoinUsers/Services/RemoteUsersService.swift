@@ -46,4 +46,6 @@ protocol RemoteUsersServiceProtocol {
 
 final class RemoteUsersService: RemoteUsersServiceProtocol {
 	private let session: Session
-	private
+	private let encoder: URLEncodedFormParameterEncoder
+
+	init(session: Session,
