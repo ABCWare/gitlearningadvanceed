@@ -50,4 +50,8 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 
 	init(session: Session, encoder: URLEncodedFormParameterEncoder) {
 		self.session = session
-		self.encoder =
+		self.encoder = encoder
+	}
+
+	func read(with parameters: RemoteUsersRequest) -> Single<[User]> {
+		return S
