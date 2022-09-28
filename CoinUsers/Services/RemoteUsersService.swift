@@ -57,3 +57,7 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 		return Single.create { [weak self] single in
 			guard let self = self else { return Disposables.create() }
 			self.session.request(Endpoints.users, parameters: parameters, encoder: self.encoder)
+				.validate()
+				.responseDecodable(
+					of: RemoteUsersResponse.self,
+					decoder: J
