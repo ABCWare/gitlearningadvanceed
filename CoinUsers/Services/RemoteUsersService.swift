@@ -55,4 +55,5 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 
 	func read(with parameters: RemoteUsersRequest) -> Single<[User]> {
 		return Single.create { [weak self] single in
-			guard let self = self else { return Disposables.creat
+			guard let self = self else { return Disposables.create() }
+			self.session.request(Endpoints.users, parameters: parameters, encoder: self.encoder)
