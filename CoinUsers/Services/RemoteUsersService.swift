@@ -54,4 +54,5 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 	}
 
 	func read(with parameters: RemoteUsersRequest) -> Single<[User]> {
-		return S
+		return Single.create { [weak self] single in
+			guard let self = self else { return Disposables.creat
