@@ -63,4 +63,7 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 					decoder: JSONDecoder.default
 				) { response in
 					switch response.result {
-					case .success(let valu
+					case .success(let value):
+						single(.success(value.results))
+					case .failure(let error):
+						single(.failure(RemoteServi
