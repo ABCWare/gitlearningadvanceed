@@ -60,4 +60,7 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 				.validate()
 				.responseDecodable(
 					of: RemoteUsersResponse.self,
-					decoder: J
+					decoder: JSONDecoder.default
+				) { response in
+					switch response.result {
+					case .success(let valu
