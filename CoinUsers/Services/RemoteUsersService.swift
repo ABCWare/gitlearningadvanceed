@@ -66,4 +66,7 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 					case .success(let value):
 						single(.success(value.results))
 					case .failure(let error):
-						single(.failure(RemoteServi
+						single(.failure(RemoteServiceError.networkError(message: error.errorDescription)))
+					}
+				}
+				.cURLDescription { desc
