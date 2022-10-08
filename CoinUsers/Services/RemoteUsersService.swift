@@ -69,4 +69,10 @@ final class RemoteUsersService: RemoteUsersServiceProtocol {
 						single(.failure(RemoteServiceError.networkError(message: error.errorDescription)))
 					}
 				}
-				.cURLDescription { desc
+				.cURLDescription { description in
+					print(description)
+				}
+			return Disposables.create()
+		}
+	}
+}
