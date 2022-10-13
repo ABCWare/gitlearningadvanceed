@@ -8,4 +8,7 @@
 import Reusable
 import UIKit
 
-// MARK: - UserDetailRow
+// MARK: - UserDetailRowViewDelegate
+
+protocol UserDetailRowViewDelegate: AnyObject {
+	func didSelectAc
