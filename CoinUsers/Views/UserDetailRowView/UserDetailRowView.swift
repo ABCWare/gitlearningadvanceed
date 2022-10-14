@@ -19,4 +19,10 @@ protocol UserDetailRowViewDelegate: AnyObject {
 final class UserDetailRowView: UIView, NibOwnerLoadable {
 	// MARK: - Action
 
-	enum Action
+	enum Action: String {
+		case email
+		case phone = "phone number"
+	}
+
+	private var action: Action? {
+		did
