@@ -16,4 +16,7 @@ protocol UserDetailRowViewDelegate: AnyObject {
 
 // MARK: - UserDetailRowView
 
-final
+final class UserDetailRowView: UIView, NibOwnerLoadable {
+	// MARK: - Action
+
+	enum Action
