@@ -11,4 +11,9 @@ import UIKit
 // MARK: - UserDetailRowViewDelegate
 
 protocol UserDetailRowViewDelegate: AnyObject {
-	func didSelectAc
+	func didSelectAction(_ action: UserDetailRowView.Action)
+}
+
+// MARK: - UserDetailRowView
+
+final
