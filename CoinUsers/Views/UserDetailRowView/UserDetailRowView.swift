@@ -25,4 +25,7 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 	}
 
 	private var action: Action? {
-		did
+		didSet {
+			switch action {
+			case .email?:
+				actionButton.setIm
