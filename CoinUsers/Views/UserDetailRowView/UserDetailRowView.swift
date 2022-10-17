@@ -31,4 +31,7 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 				actionButton.setImage(.arrow, for: .normal)
 				actionButton.isHidden = false
 			case .phone?:
-				actionButton.setImage
+				actionButton.setImage(.phone, for: .normal)
+				actionButton.isHidden = false
+			case .none:
+				actionButto
