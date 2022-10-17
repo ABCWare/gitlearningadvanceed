@@ -28,4 +28,7 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 		didSet {
 			switch action {
 			case .email?:
-				actionButton.setIm
+				actionButton.setImage(.arrow, for: .normal)
+				actionButton.isHidden = false
+			case .phone?:
+				actionButton.setImage
