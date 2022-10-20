@@ -42,4 +42,9 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 	// MARK: - Init
 
 	required init?(coder aDecoder: NSCoder) {
-		super
+		super.init(coder: aDecoder)
+		loadNibContent()
+	}
+
+	override init(frame: CGRect) {
+		super.ini
