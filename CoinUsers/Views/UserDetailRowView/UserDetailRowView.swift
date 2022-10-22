@@ -59,4 +59,7 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 
 	// MARK: - Inspectables
 
-	@IBInspectable var title: String
+	@IBInspectable var title: String! {
+		didSet {
+			titleLabel.text = title + ":"
+			action = Action(rawValue: title.lowe
