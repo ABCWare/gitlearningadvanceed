@@ -47,4 +47,10 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 	}
 
 	override init(frame: CGRect) {
-		super.ini
+		super.init(frame: frame)
+		loadNibContent()
+	}
+
+	// MARK: - Outlets
+
+	@IBOutlet private v
