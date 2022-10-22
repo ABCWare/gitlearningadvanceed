@@ -55,4 +55,8 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 
 	@IBOutlet private var titleLabel: UILabel!
 	@IBOutlet private var valueLabel: UILabel!
-	@IBOutlet private var
+	@IBOutlet private var actionButton: UIButton!
+
+	// MARK: - Inspectables
+
+	@IBInspectable var title: String
