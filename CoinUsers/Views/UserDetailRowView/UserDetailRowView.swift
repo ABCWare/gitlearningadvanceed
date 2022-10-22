@@ -53,4 +53,6 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 
 	// MARK: - Outlets
 
-	@IBOutlet private v
+	@IBOutlet private var titleLabel: UILabel!
+	@IBOutlet private var valueLabel: UILabel!
+	@IBOutlet private var
