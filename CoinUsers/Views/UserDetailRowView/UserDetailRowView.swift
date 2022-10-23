@@ -68,4 +68,11 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 
 	var value: String {
 		get { valueLabel.text ?? "" }
-		set { valueLabel.text
+		set { valueLabel.text = newValue }
+	}
+
+	// MARK: - Delegate
+
+	weak var delegate: UserDetailRowViewDelegate?
+
+	@IBA
