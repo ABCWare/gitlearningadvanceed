@@ -62,4 +62,10 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 	@IBInspectable var title: String! {
 		didSet {
 			titleLabel.text = title + ":"
-			action = Action(rawValue: title.lowe
+			action = Action(rawValue: title.lowercased())
+		}
+	}
+
+	var value: String {
+		get { valueLabel.text ?? "" }
+		set { valueLabel.text
