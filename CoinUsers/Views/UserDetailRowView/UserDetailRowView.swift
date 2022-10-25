@@ -75,4 +75,6 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 
 	weak var delegate: UserDetailRowViewDelegate?
 
-	@IBA
+	@IBAction private func actionTapped(_ sender: UIButton) {
+		if let action = action {
+			delegate
