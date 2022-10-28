@@ -77,4 +77,7 @@ final class UserDetailRowView: UIView, NibOwnerLoadable {
 
 	@IBAction private func actionTapped(_ sender: UIButton) {
 		if let action = action {
-			delegate
+			delegate?.didSelectAction(action)
+		}
+	}
+}
