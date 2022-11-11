@@ -10,4 +10,5 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailRowView" customModule="CoinUsers" customModuleProvider="target">
             <connections>
-                <outlet property="actionButt
+                <outlet property="actionButton" destination="OQo-yf-lfk" id="8ng-Bz-Iuz"/>
+                <outlet property="titleLa
