@@ -11,4 +11,5 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailRowView" customModule="CoinUsers" customModuleProvider="target">
             <connections>
                 <outlet property="actionButton" destination="OQo-yf-lfk" id="8ng-Bz-Iuz"/>
-                <outlet property="titleLa
+                <outlet property="titleLabel" destination="5w9-uC-W0O" id="C25-Xe-8fU"/>
+                <outlet property="valueLabel" destination="
