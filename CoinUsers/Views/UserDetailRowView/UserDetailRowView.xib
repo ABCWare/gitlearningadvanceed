@@ -12,4 +12,7 @@
             <connections>
                 <outlet property="actionButton" destination="OQo-yf-lfk" id="8ng-Bz-Iuz"/>
                 <outlet property="titleLabel" destination="5w9-uC-W0O" id="C25-Xe-8fU"/>
-                <outlet property="valueLabel" destination="
+                <outlet property="valueLabel" destination="fU7-kN-Ja7" id="YIl-xZ-e1U"/>
+            </connections>
+        </placeholder>
+   
