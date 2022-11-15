@@ -15,4 +15,4 @@
                 <outlet property="valueLabel" destination="fU7-kN-Ja7" id="YIl-xZ-e1U"/>
             </connections>
         </placeholder>
-   
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"
