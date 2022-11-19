@@ -20,4 +20,5 @@
             <rect key="frame" x="0.0" y="0.0" width="520" height="78"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoCons
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-N7-h6h">
+                    <rect key="frame" x="0.0" y="0.0" width="520" 
