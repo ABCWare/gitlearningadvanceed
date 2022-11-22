@@ -25,4 +25,5 @@
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="czD-zb-Tyg">
                             <rect key="frame" x="0.0" y="0.0" width="483" height="78"/>
-     
+                            <subviews>
+                                <label opaque="NO" u
