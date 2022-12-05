@@ -32,4 +32,4 @@
                                     <color key="textColor" name="main1"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                 
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ho
