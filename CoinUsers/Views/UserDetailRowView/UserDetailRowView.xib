@@ -45,4 +45,4 @@
                             <color key="tintColor" name="main1"/>
                             <state key="normal" image="arrowshape.turn.up.right" catalog="system"/>
                             <connections>
-        
+                                <action selector="actionTapped:" destination="-1" eventType="touchUpI
