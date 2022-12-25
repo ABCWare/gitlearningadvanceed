@@ -47,4 +47,7 @@
                             <connections>
                                 <action selector="actionTapped:" destination="-1" eventType="touchUpInside" id="5jG-7D-dWi"/>
                             </connections>
-                      
+                        </button>
+                    </subviews>
+                </stackView>
+            </subv
