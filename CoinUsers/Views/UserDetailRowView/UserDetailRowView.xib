@@ -64,4 +64,5 @@
     </objects>
     <resources>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
-    
+        <namedColor name="main1">
+            <color red="1" green="0.80000000000000004" blue="0.00784313725490
