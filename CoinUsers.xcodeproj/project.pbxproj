@@ -340,3 +340,84 @@
 		16E80A3526497C1500DAD562 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				16E80A3626497C2200DAD562 /* BaseViewController.swift */,
+				16E80A3826497CDF00DAD562 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		16E80A51264ACB0700DAD562 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A52264ACB1700DAD562 /* UIColor+Extensions.swift */,
+				16E80A72264B250400DAD562 /* JSONDecoder+Extensions.swift */,
+				16E80A82264BEF7C00DAD562 /* UIScrollView+Extensions.swift */,
+				167F00A9264CBDEF0085677A /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		16E80A5A264AD8BC00DAD562 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A60264AE5B200DAD562 /* User */,
+				16E80A5B264AD8CB00DAD562 /* MainTab.swift */,
+				16E80A74264B277900DAD562 /* Endpoints.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16E80A5D264AE56C00DAD562 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A5E264AE58900DAD562 /* RemoteUsersService.swift */,
+				16FC0C6D264C2065009EF8CF /* RealmService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		16E80A60264AE5B200DAD562 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				16FC0C6F264C27F6009EF8CF /* Local */,
+				16E80A68264AE9FB00DAD562 /* Remote */,
+				16E80A61264AE5FA00DAD562 /* User.swift */,
+				16E80A63264AE6E800DAD562 /* Address.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		16E80A68264AE9FB00DAD562 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A65264AE9AD00DAD562 /* RemoteUser.swift */,
+				16E80A69264AEA0A00DAD562 /* RemoteLocation.swift */,
+				16E80A6B264AEBAF00DAD562 /* RemoteUsersRequest.swift */,
+				16E80A6D264AECA400DAD562 /* RemoteUsersResponse.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		16E80A76264B2AC400DAD562 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				167F00A5264C589E0085677A /* UserTableViewCell */,
+				167F00A6264C58AF0085677A /* UserDetailRowView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16FC0C6F264C27F6009EF8CF /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				16FC0C70264C280C009EF8CF /* LocalUser.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16E809D5264963A400DAD562 /* CoinUsers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16E80A00264963A700DAD562 /* Build configuration list for PBXNativeTarget "CoinUsers" */;
