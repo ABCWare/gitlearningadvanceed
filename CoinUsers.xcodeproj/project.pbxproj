@@ -157,3 +157,93 @@
 				16FC0C6A264C1AB1009EF8CF /* Realm in Frameworks */,
 				16E80A71264AF24F00DAD562 /* Alamofire in Frameworks */,
 				16E80A1B2649655D00DAD562 /* RxKingfisher in Frameworks */,
+				16E80A81264BE95A00DAD562 /* RxGesture in Frameworks */,
+				16E80A122649649000DAD562 /* RxFlow in Frameworks */,
+				16E80A15264964B200DAD562 /* Swinject in Frameworks */,
+				16E80A2A26497B7300DAD562 /* SwinjectAutoregistration in Frameworks */,
+				16E80A0F2649640900DAD562 /* RxRelay in Frameworks */,
+				16E80A4826497E5100DAD562 /* Reusable in Frameworks */,
+				16E80A0D2649640900DAD562 /* RxCocoa in Frameworks */,
+				16E80A0B2649640900DAD562 /* RxSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16E809E9264963A700DAD562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16E809F4264963A700DAD562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		167F009C264C522D0085677A /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				167F009D264C52450085677A /* UserDetailsViewController.swift */,
+				167F009F264C524C0085677A /* UserDetailsViewModel.swift */,
+				167F00A1264C52620085677A /* UserDetailsViewController.storyboard */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		167F00A5264C589E0085677A /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A7B264B309100DAD562 /* UserTableViewCell.swift */,
+				16E80A7C264B309100DAD562 /* UserTableViewCell.xib */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
+		167F00A6264C58AF0085677A /* UserDetailRowView */ = {
+			isa = PBXGroup;
+			children = (
+				167F00A3264C58780085677A /* UserDetailRowView.swift */,
+				167F00A7264C58C40085677A /* UserDetailRowView.xib */,
+			);
+			path = UserDetailRowView;
+			sourceTree = "<group>";
+		};
+		16E809CD264963A400DAD562 = {
+			isa = PBXGroup;
+			children = (
+				16E809D8264963A400DAD562 /* CoinUsers */,
+				16E809EF264963A700DAD562 /* CoinUsersTests */,
+				16E809FA264963A700DAD562 /* CoinUsersUITests */,
+				16E809D7264963A400DAD562 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16E809D7264963A400DAD562 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16E809D6264963A400DAD562 /* CoinUsers.app */,
+				16E809EC264963A700DAD562 /* CoinUsersTests.xctest */,
+				16E809F7264963A700DAD562 /* CoinUsersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16E809D8264963A400DAD562 /* CoinUsers */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A3526497C1500DAD562 /* Base */,
+				16E80A51264ACB0700DAD562 /* Extensions */,
+				16E80A2526497AF800DAD562 /* DI */,
+				16E80A1C264967C900DAD562 /* Coordinator */,
+				16E80A5D264AE56C00DAD562 /* Services */,
+				16E80A5A264AD8BC00DAD562 /* Models */,
+				16E80A76264B2AC400DAD562 /* Views */,
+				16E80A2B26497BA100DAD562 /* Arch */,
+				16E809D9264963A400DAD562 /* AppDelegate.swift */,
+				16E809DB264963A400DAD562 /* SceneDelegate.swift */,
+				16E809E2264963A700DAD562 /* Assets.xcassets */,
