@@ -247,3 +247,96 @@
 				16E809D9264963A400DAD562 /* AppDelegate.swift */,
 				16E809DB264963A400DAD562 /* SceneDelegate.swift */,
 				16E809E2264963A700DAD562 /* Assets.xcassets */,
+				16E80A54264ACB7600DAD562 /* Colors.xcassets */,
+				16E809E4264963A700DAD562 /* LaunchScreen.storyboard */,
+				16E809E7264963A700DAD562 /* Info.plist */,
+			);
+			path = CoinUsers;
+			sourceTree = "<group>";
+		};
+		16E809EF264963A700DAD562 /* CoinUsersTests */ = {
+			isa = PBXGroup;
+			children = (
+				16E809F0264963A700DAD562 /* CoinUsersTests.swift */,
+				16E809F2264963A700DAD562 /* Info.plist */,
+			);
+			path = CoinUsersTests;
+			sourceTree = "<group>";
+		};
+		16E809FA264963A700DAD562 /* CoinUsersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16E809FB264963A700DAD562 /* CoinUsersUITests.swift */,
+				16E809FD264963A700DAD562 /* Info.plist */,
+			);
+			path = CoinUsersUITests;
+			sourceTree = "<group>";
+		};
+		16E80A1C264967C900DAD562 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A1D264967E300DAD562 /* AppFlow.swift */,
+				16E80A1F26496A7A00DAD562 /* RemoteUsersFlow.swift */,
+				16E80A212649734B00DAD562 /* LocalUsersFlow.swift */,
+				16E80A232649735200DAD562 /* SettingsFlow.swift */,
+				16E80A4D2649818400DAD562 /* NavigationFlow.swift */,
+				16E80A58264AD7BE00DAD562 /* AppStep.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		16E80A2526497AF800DAD562 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A2626497B2D00DAD562 /* UsersAssembly.swift */,
+				16E80A56264AD0E100DAD562 /* SettingsAssembly.swift */,
+				16E80A49264980AF00DAD562 /* ServiceAssembly.swift */,
+				16E80A4B264980E100DAD562 /* FlowAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		16E80A2B26497BA100DAD562 /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A2E26497BD000DAD562 /* Settings */,
+				16E80A2D26497BCA00DAD562 /* RemoteUsers */,
+				16E80A2C26497BB500DAD562 /* LocalUsers */,
+				167F009C264C522D0085677A /* UserDetails */,
+			);
+			path = Arch;
+			sourceTree = "<group>";
+		};
+		16E80A2C26497BB500DAD562 /* LocalUsers */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A2F26497BE200DAD562 /* LocalUsersViewController.swift */,
+				16E80A3126497BED00DAD562 /* LocalUsersViewModel.swift */,
+				16E80A3326497BF800DAD562 /* LocalUsersViewController.storyboard */,
+			);
+			path = LocalUsers;
+			sourceTree = "<group>";
+		};
+		16E80A2D26497BCA00DAD562 /* RemoteUsers */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A3A26497D3600DAD562 /* RemoteUsersViewController.swift */,
+				16E80A3C26497D5000DAD562 /* RemoteUsersViewModel.swift */,
+				16E80A3E26497D7B00DAD562 /* RemoteUsersViewController.storyboard */,
+			);
+			path = RemoteUsers;
+			sourceTree = "<group>";
+		};
+		16E80A2E26497BD000DAD562 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				16E80A4026497D8900DAD562 /* SettingsViewController.swift */,
+				16E80A4226497D9200DAD562 /* SettingsViewModel.swift */,
+				16E80A4426497D9700DAD562 /* SettingsViewController.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		16E80A3526497C1500DAD562 /* Base */ = {
+			isa = PBXGroup;
+			children = (
