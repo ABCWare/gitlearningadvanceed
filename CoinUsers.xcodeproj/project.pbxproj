@@ -480,3 +480,79 @@
 			dependencies = (
 				16E809F9264963A700DAD562 /* PBXTargetDependency */,
 			);
+			name = CoinUsersUITests;
+			productName = CoinUsersUITests;
+			productReference = 16E809F7264963A700DAD562 /* CoinUsersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16E809CE264963A400DAD562 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					16E809D5264963A400DAD562 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					16E809EB264963A700DAD562 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 16E809D5264963A400DAD562;
+					};
+					16E809F6264963A700DAD562 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 16E809D5264963A400DAD562;
+					};
+				};
+			};
+			buildConfigurationList = 16E809D1264963A400DAD562 /* Build configuration list for PBXProject "CoinUsers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16E809CD264963A400DAD562;
+			packageReferences = (
+				16E80A092649640900DAD562 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				16E80A102649649000DAD562 /* XCRemoteSwiftPackageReference "RxFlow" */,
+				16E80A13264964B200DAD562 /* XCRemoteSwiftPackageReference "Swinject" */,
+				16E80A192649655D00DAD562 /* XCRemoteSwiftPackageReference "RxKingfisher" */,
+				16E80A2826497B7300DAD562 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				16E80A4626497E5100DAD562 /* XCRemoteSwiftPackageReference "Reusable" */,
+				16E80A6F264AF24F00DAD562 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				16E80A7F264BE95A00DAD562 /* XCRemoteSwiftPackageReference "RxGesture" */,
+				16FC0C68264C1AB1009EF8CF /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = 16E809D7264963A400DAD562 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16E809D5264963A400DAD562 /* CoinUsers */,
+				16E809EB264963A700DAD562 /* CoinUsersTests */,
+				16E809F6264963A700DAD562 /* CoinUsersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16E809D4264963A400DAD562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E809E6264963A700DAD562 /* LaunchScreen.storyboard in Resources */,
+				16E809E3264963A700DAD562 /* Assets.xcassets in Resources */,
+				16E80A3F26497D7B00DAD562 /* RemoteUsersViewController.storyboard in Resources */,
+				16E80A7E264B309100DAD562 /* UserTableViewCell.xib in Resources */,
+				16E80A3426497BF800DAD562 /* LocalUsersViewController.storyboard in Resources */,
+				16E80A4526497D9700DAD562 /* SettingsViewController.storyboard in Resources */,
+				167F00A8264C58C40085677A /* UserDetailRowView.xib in Resources */,
+				16E80A55264ACB7600DAD562 /* Colors.xcassets in Resources */,
+				167F00A2264C52620085677A /* UserDetailsViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16E809EA264963A700DAD562 /* Resources */ = {
