@@ -421,3 +421,62 @@
 		16E809D5264963A400DAD562 /* CoinUsers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16E80A00264963A700DAD562 /* Build configuration list for PBXNativeTarget "CoinUsers" */;
+			buildPhases = (
+				16E809D2264963A400DAD562 /* Sources */,
+				16E809D3264963A400DAD562 /* Frameworks */,
+				16E809D4264963A400DAD562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinUsers;
+			packageProductDependencies = (
+				16E80A0A2649640900DAD562 /* RxSwift */,
+				16E80A0C2649640900DAD562 /* RxCocoa */,
+				16E80A0E2649640900DAD562 /* RxRelay */,
+				16E80A112649649000DAD562 /* RxFlow */,
+				16E80A14264964B200DAD562 /* Swinject */,
+				16E80A1A2649655D00DAD562 /* RxKingfisher */,
+				16E80A2926497B7300DAD562 /* SwinjectAutoregistration */,
+				16E80A4726497E5100DAD562 /* Reusable */,
+				16E80A70264AF24F00DAD562 /* Alamofire */,
+				16E80A80264BE95A00DAD562 /* RxGesture */,
+				16FC0C69264C1AB1009EF8CF /* Realm */,
+				16FC0C6B264C1AB1009EF8CF /* RealmSwift */,
+			);
+			productName = CoinUsers;
+			productReference = 16E809D6264963A400DAD562 /* CoinUsers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16E809EB264963A700DAD562 /* CoinUsersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16E80A03264963A700DAD562 /* Build configuration list for PBXNativeTarget "CoinUsersTests" */;
+			buildPhases = (
+				16E809E8264963A700DAD562 /* Sources */,
+				16E809E9264963A700DAD562 /* Frameworks */,
+				16E809EA264963A700DAD562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16E809EE264963A700DAD562 /* PBXTargetDependency */,
+			);
+			name = CoinUsersTests;
+			productName = CoinUsersTests;
+			productReference = 16E809EC264963A700DAD562 /* CoinUsersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16E809F6264963A700DAD562 /* CoinUsersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16E80A06264963A700DAD562 /* Build configuration list for PBXNativeTarget "CoinUsersUITests" */;
+			buildPhases = (
+				16E809F3264963A700DAD562 /* Sources */,
+				16E809F4264963A700DAD562 /* Frameworks */,
+				16E809F5264963A700DAD562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16E809F9264963A700DAD562 /* PBXTargetDependency */,
+			);
