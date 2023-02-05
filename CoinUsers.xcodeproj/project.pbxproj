@@ -893,3 +893,86 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hovakdavtyan.CoinUsersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinUsers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16E809D1264963A400DAD562 /* Build configuration list for PBXProject "CoinUsers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16E809FE264963A700DAD562 /* Debug */,
+				16E809FF264963A700DAD562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16E80A00264963A700DAD562 /* Build configuration list for PBXNativeTarget "CoinUsers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16E80A01264963A700DAD562 /* Debug */,
+				16E80A02264963A700DAD562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16E80A03264963A700DAD562 /* Build configuration list for PBXNativeTarget "CoinUsersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16E80A04264963A700DAD562 /* Debug */,
+				16E80A05264963A700DAD562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16E80A06264963A700DAD562 /* Build configuration list for PBXNativeTarget "CoinUsersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16E80A07264963A700DAD562 /* Debug */,
+				16E80A08264963A700DAD562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		16E80A092649640900DAD562 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+		16E80A102649649000DAD562 /* XCRemoteSwiftPackageReference "RxFlow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxFlow";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.12.1;
+			};
+		};
+		16E80A13264964B200DAD562 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		16E80A192649655D00DAD562 /* XCRemoteSwiftPackageReference "RxKingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxKingfisher";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		16E80A2826497B7300DAD562 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration";
