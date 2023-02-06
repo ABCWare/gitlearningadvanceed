@@ -976,3 +976,99 @@
 		16E80A2826497B7300DAD562 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		16E80A4626497E5100DAD562 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+		16E80A6F264AF24F00DAD562 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		16E80A7F264BE95A00DAD562 /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.0.2;
+			};
+		};
+		16FC0C68264C1AB1009EF8CF /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		16E80A0A2649640900DAD562 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A092649640900DAD562 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		16E80A0C2649640900DAD562 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A092649640900DAD562 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		16E80A0E2649640900DAD562 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A092649640900DAD562 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		16E80A112649649000DAD562 /* RxFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A102649649000DAD562 /* XCRemoteSwiftPackageReference "RxFlow" */;
+			productName = RxFlow;
+		};
+		16E80A14264964B200DAD562 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A13264964B200DAD562 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		16E80A1A2649655D00DAD562 /* RxKingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A192649655D00DAD562 /* XCRemoteSwiftPackageReference "RxKingfisher" */;
+			productName = RxKingfisher;
+		};
+		16E80A2926497B7300DAD562 /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A2826497B7300DAD562 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		16E80A4726497E5100DAD562 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A4626497E5100DAD562 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+		16E80A70264AF24F00DAD562 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A6F264AF24F00DAD562 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		16E80A80264BE95A00DAD562 /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E80A7F264BE95A00DAD562 /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
+		};
+		16FC0C69264C1AB1009EF8CF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16FC0C68264C1AB1009EF8CF /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		16FC0C6B264C1AB1009EF8CF /* RealmSwift */ = {
