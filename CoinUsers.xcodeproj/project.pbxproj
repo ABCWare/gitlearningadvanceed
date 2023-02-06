@@ -1072,3 +1072,11 @@
 			productName = Realm;
 		};
 		16FC0C6B264C1AB1009EF8CF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16FC0C68264C1AB1009EF8CF /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 16E809CE264963A400DAD562 /* Project object */;
+}
