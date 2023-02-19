@@ -15,4 +15,4 @@ class CoinUsersUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI test
+        // In UI tests it’s important to set the initial state - such as interface orientation - required for your te
