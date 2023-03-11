@@ -28,4 +28,8 @@ class CoinUsersUITests: XCTestCase {
         app.launch()
 
         // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produc
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+
+    func testLaunchPerformance() throws {
+        i
