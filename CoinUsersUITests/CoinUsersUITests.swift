@@ -32,4 +32,5 @@ class CoinUsersUITests: XCTestCase {
     }
 
     func testLaunchPerformance() throws {
-        i
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+            // This measures how 
