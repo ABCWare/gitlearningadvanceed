@@ -37,4 +37,6 @@ class CoinUsersUITests: XCTestCase {
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()
             }
-      
+        }
+    }
+}
